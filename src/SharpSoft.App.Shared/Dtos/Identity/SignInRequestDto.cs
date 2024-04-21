@@ -26,5 +26,5 @@ public class SignInRequestDto
     [Required(ErrorMessage = nameof(AppStrings.RequiredAttribute_ValidationError))]
     [Url(ErrorMessage = nameof(AppStrings.ServerAddressAttribute_ValidationError))]
     [Display(Name = nameof(AppStrings.ServerAddress))]
-    public string? ServerAddress { get; set; } = "http://";
+    public string? ServerAddress { get; set; } = "https://";
 }

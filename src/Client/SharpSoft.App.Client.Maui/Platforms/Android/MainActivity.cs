@@ -8,7 +8,7 @@ using Java.Net;
 namespace SharpSoft.App.Client.Maui.Platforms.Android;
 
 [IntentFilter([Intent.ActionView],
-                        DataScheme = "http",
+                        DataScheme = "https",
                         DataHost = "135.181.171.147",
                         DataPathPrefix = "/",
                         AutoVerify = true,

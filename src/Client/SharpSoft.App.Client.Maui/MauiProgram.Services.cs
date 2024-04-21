@@ -19,7 +19,7 @@ public static partial class MauiProgram
             services.AddBlazorWebViewDeveloperTools();
         }
        
-        services.AddBlazorWebViewDeveloperTools();
+        //services.AddBlazorWebViewDeveloperTools();
 
         Uri.TryCreate(configuration.GetApiServerAddress(), UriKind.Absolute, out var apiServerAddress);
 
