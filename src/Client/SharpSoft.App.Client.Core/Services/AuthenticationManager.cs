@@ -2,10 +2,7 @@
 using System.Text.Json;
 using SharpSoft.App.Shared.Dtos.Identity;
 using SharpSoft.App.Client.Core.Controllers.Identity;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Configuration;
 using SharpSoft.App.Client.Core.Data;
-using System.Net.Http;
 
 namespace SharpSoft.App.Client.Core.Services;
 
