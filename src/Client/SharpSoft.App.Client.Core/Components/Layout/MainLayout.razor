@@ -1,0 +1,23 @@
+﻿@inherits LayoutComponentBase
+
+<CascadingValue Value="currentDir">
+    <div dir="@currentDir?.ToString()" class="layout">
+        <Header OnToggleMenu=ToggleMenuHandler />
+
+        <main class="@BitCss.Class.Color.Background.Primary">
+            @if (isUserAuthenticated)
+            {
+                <NavMenu @bind-IsMenuOpen=isMenuOpen />
+            }
+            <div class="main-content container">
+                <AppErrorBoundary>
+                    @Body
+                </AppErrorBoundary>
+            </div>
+        </main>
+
+        <Footer />
+
+        <MessageBox />
+    </div>
+</CascadingValue>

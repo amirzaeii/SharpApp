@@ -1,0 +1,11 @@
+{
+  "solution": {
+    "path": "SharpSoft.App.sln",
+    "projects": [
+      "src\\SharpSoft.App.Server\\SharpSoft.App.Server.csproj",
+      "src\\SharpSoft.App.Shared\\SharpSoft.App.Shared.csproj",
+      "src\\Client\\SharpSoft.App.Client.Core\\SharpSoft.App.Client.Core.csproj",
+      "src\\Client\\SharpSoft.App.Client.Web\\SharpSoft.App.Client.Web.csproj"
+    ]
+  }
+}

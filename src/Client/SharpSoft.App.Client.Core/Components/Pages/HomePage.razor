@@ -1,0 +1,42 @@
+﻿@page "/"
+@inherits AppComponentBase
+
+<PageTitle>@Localizer[nameof(AppStrings.HomeTitle)]</PageTitle>
+<link href="_content/SharpSoft.App.Client.Core/lib/leaflet/leaflet.css" rel="stylesheet" />
+<script src="_content/SharpSoft.App.Client.Core/lib/leaflet/leaflet.js"></script>
+
+<div id="map">
+   
+</div>
+<div id="bars"></div>
+<div class="refresh">
+    <button class="btn btn-outline-primary" type="button" @onclick="(() => RefreshLocation())">refresh</button>
+    <button class="btn btn-primary" type="button">@currentTime</button>
+</div>
+<div class="buttonswrapper">
+    <div class="d-grid gap-2">
+            <button class="btn btn-success btn-lg" @onclick="(() => CheckIn(true))"> @Localizer[nameof(AppStrings.CheckIn)]</button>
+            <button class="btn btn-danger btn-lg btn-block" @onclick="(() => CheckIn(false))">@Localizer[nameof(AppStrings.CheckOut)]</button>
+        </div>
+</div>
+
+<OkModal @bind-IsOpen="okSubmited" />
+<ErrorModal @bind-IsOpen="errorSubmited" />
+
+<ErrorModal @bind-IsOpen="locationIsOff" />
+
+@* <BitModal @bind-IsOpen="locationIsOff">
+    <div class="modal-header">
+        <span>location access error</span>
+        <BitIconButton OnClick=@(() => locationIsOff = false) IconName="@BitIconName.ChromeClose" Title="Close" />
+    </div>
+    <div class="modal-body">
+        <p>
+            @Localizer[nameof(AppStrings.NeedLocation)]
+        </p>
+        <p>
+            @Localizer[nameof(AppStrings.TurnOnLocation)]
+        </p>
+    </div>
+</BitModal> *@
+

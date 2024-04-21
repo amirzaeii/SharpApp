@@ -1,0 +1,38 @@
+﻿@inherits AppComponentBase
+
+<footer class="footer">
+    @if (SelectedCulture is not null)
+    {@* 
+        <BitDropdown @bind-Value="SelectedCulture"
+                     Class="culture-drp"
+                     Items="cultures"
+                     OnSelectItem="WrapHandled((BitDropdownItem<string> item) => OnCultureChanged())" /> *@
+    }
+
+    <div class="footer-content">
+        SharpSoft All Rights Reserved.
+        <div class="footer-social-lnk-grp">
+            <a href="https://www.linkedin.com/company/sharp-soft-company" target="_blank">
+                <img src="_content/SharpSoft.App.Client.Core/images/icons/linkedin.svg" width="25" height="25" />
+            </a>
+            <a href="https: //wa.link/kovbg0" target="_blank">
+                <img src="_content/SharpSoft.App.Client.Core/images/icons/whatsapp.svg" width="25" height="25" />
+            </a>
+            <a href="https://www.instagram.com/sharpsoftco/" target="_blank">
+                <img src="_content/SharpSoft.App.Client.Core/images/icons/instagram.svg" width="25" height="25" />
+            </a>
+            <a href="https://www.facebook.com/SharpSoftCompany" target="_blank">
+                <img src="_content/SharpSoft.App.Client.Core/images/icons/facebook.svg" width="25" height="25" />
+            </a>
+        </div>
+    </div>
+
+    <div class="theme-container">
+       @*  <button @onclick="WrapHandled(ToggleTheme)" class="toggle-theme-btn dark-theme" title="Turn on light">
+            <span class="icon-container"><i class="bit-icon bit-icon--Sunny"></i></span>
+        </button>
+        <button @onclick="WrapHandled(ToggleTheme)" class="toggle-theme-btn light-theme" title="Turn off light">
+            <span class="icon-container"><i class="bit-icon bit-icon--ClearNight"></i></span>
+        </button> *@
+    </div>
+</footer>
