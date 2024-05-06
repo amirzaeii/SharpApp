@@ -11,7 +11,7 @@ jobs:
 
   build_blazor_server:
     name: build blazor
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
 
     steps:
     
@@ -26,6 +26,7 @@ jobs:
     - uses: actions/setup-node@v4
       with:
         node-version: 20
-      
+    - name: Install wasm
+      run: dotnet workload install wasm-tools wasm-experimental
     - name: Build
       run: dotnet build SharpSoft.App.sln -c Release
