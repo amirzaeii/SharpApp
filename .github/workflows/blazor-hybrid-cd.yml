@@ -62,6 +62,9 @@ jobs:
   
     - name: Build apk
       run: dotnet build src/Client/SharpSoft.App.Client.Maui/SharpSoft.App.Client.Maui.csproj -c Release -p:AndroidKeyStore=true -p:AndroidSigningKeyStore="SharpSoft.App.keystore" -p:AndroidSigningKeyAlias=SharpSoft.App -p:AndroidSigningKeyPass="${{ secrets.ANDROID_RELEASE_KEYSTORE_PASSWORD }}" -p:AndroidSigningStorePass="${{ secrets.ANDROID_RELEASE_SIGNING_PASSWORD }}" -f net8.0-android
+   
+    - name: Build aab
+      run: dotnet build src/Client/SharpSoft.App.Client.Maui/SharpSoft.App.Client.Maui.csproj -c Release -p:AndroidPackageFormat=aab -p:AndroidKeyStore=true -p:AndroidSigningKeyStore="SharpSoft.App.keystore" -p:AndroidSigningKeyAlias=SharpSoft.App -p:AndroidSigningKeyPass="${{ secrets.ANDROID_RELEASE_KEYSTORE_PASSWORD }}" -p:AndroidSigningStorePass="${{ secrets.ANDROID_RELEASE_SIGNING_PASSWORD }}" -f net8.0-android
   
     - name: Upload artifact
       uses: actions/upload-artifact@v4
@@ -73,6 +76,5 @@ jobs:
       uses: actions/download-artifact@v4
       with:
         name: android-bundle
-        path: src/Client/SharpSoft.App.Client.Maui/bin/Release/net8.0-android/
-        run: ls -R src/Client/SharpSoft.App.Client.Maui/bin/Release/net8.0-android/
+        run: ls -R
   
