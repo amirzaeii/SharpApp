@@ -487,4 +487,7 @@ Please confirm your email by clicking on the link.</value>
   <data name="ServerAddressAttribute_ValidationError" xml:space="preserve">
     <value>The {0} field is not a valid url.</value>
   </data>
+  <data name="SubmitCheckin" xml:space="preserve">
+    <value>Your check-in/check-out has submit successfully!</value>
+  </data>
 </root>

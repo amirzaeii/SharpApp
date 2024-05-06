@@ -980,6 +980,15 @@ namespace SharpSoft.App.Shared.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Your check-in/check-out has submit successfully!.
+        /// </summary>
+        public static string SubmitCheckin {
+            get {
+                return ResourceManager.GetString("SubmitCheckin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Is accept terms?.
         /// </summary>
         public static string TermsAccepted {

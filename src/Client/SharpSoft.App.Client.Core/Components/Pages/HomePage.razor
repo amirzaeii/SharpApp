@@ -25,7 +25,7 @@
 
 <ErrorModal @bind-IsOpen="locationIsOff" />
 
-@* <BitModal @bind-IsOpen="locationIsOff">
+<BitModal @bind-IsOpen="locationIsOff">
     <div class="modal-header">
         <span>location access error</span>
         <BitIconButton OnClick=@(() => locationIsOff = false) IconName="@BitIconName.ChromeClose" Title="Close" />
@@ -38,5 +38,5 @@
             @Localizer[nameof(AppStrings.TurnOnLocation)]
         </p>
     </div>
-</BitModal> *@
+</BitModal>
 

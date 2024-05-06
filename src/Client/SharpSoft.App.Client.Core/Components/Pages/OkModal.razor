@@ -8,8 +8,8 @@
         <div class="modal-title">SUCCESS</div>
         <div class="modal-desc"></div>
         <div>
-            your check-in/check-out has submit successfully! <br />
-            <BitButton ButtonStyle="BitButtonStyle.Standard" OnClick="CloseModal">OK</BitButton>
+            @Localizer[nameof(AppStrings.SubmitCheckin)] <br />
+            <BitButton ButtonStyle="BitButtonStyle.Standard" OnClick="CloseModal">@Localizer[nameof(AppStrings.Yes)]</BitButton>
         </div>
     </div>
 </BitModal>
