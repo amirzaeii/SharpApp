@@ -5,7 +5,7 @@ name: SharpSoft.App CD
 env:
   API_SERVER_ADDRESS: 'https://kingforce.sharpsoftco.com/'
   APP_SERVICE_NAME: 'app-service-bp-test'
-  IOS_CODE_SIGN_PROVISION: 'sharpsoftco-sharpApp'
+  IOS_CODE_SIGN_PROVISION: 'sharpsoftco'
 
 on:
   workflow_dispatch:
