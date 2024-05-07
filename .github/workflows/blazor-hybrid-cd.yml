@@ -5,7 +5,7 @@ name: SharpSoft.App CD
 env:
   API_SERVER_ADDRESS: 'https://kingforce.sharpsoftco.com/'
   APP_SERVICE_NAME: 'app-service-bp-test'
-  IOS_CODE_SIGN_PROVISION: 'SharpSoft.App'
+  IOS_CODE_SIGN_PROVISION: 'SharpSoftApp'
 
 on:
   workflow_dispatch:
@@ -16,10 +16,9 @@ permissions:
   contents: read
 
 jobs:
-  
-  build_blazor_hybrid_android:
-    name: build blazor hybrid (android)
-    runs-on: ubuntu-latest
+  build_blazor_hybrid_iOS:
+    name: build blazor hybrid (iOS-macOS)
+    runs-on: macos-latest
   
     steps:
      
@@ -31,16 +30,13 @@ jobs:
       with:
         global-json-file: global.json
 
+    - uses: maxim-lobanov/setup-xcode@v1
+      with:
+        xcode-version: '15.3'
+
     - uses: actions/setup-node@v4
       with:
         node-version: 20
-  
-    - name: Extract Android signing key from env
-      uses: timheuer/base64-to-file@v1.2
-      with:
-          fileDir: './src/Client/SharpSoft.App.Client.Maui/'
-          fileName: 'SharpSoft.App.keystore'
-          encodedString: ${{ secrets.ANDROID_RELEASE_KEYSTORE_FILE_BASE64 }}
   
     - name: Update appsettings.json api server address
       uses: devops-actions/variable-substitution@v1.2 
@@ -50,31 +46,42 @@ jobs:
         ApiServerAddress: ${{ env.API_SERVER_ADDRESS }}
 
     - name: Install maui
-      run: cd src && dotnet workload install maui-android
-
-    - name: Install Android Sdk platform tools
-      run: ${ANDROID_SDK_ROOT}/cmdline-tools/latest/bin/sdkmanager --sdk_root=$ANDROID_SDK_ROOT "platform-tools"
+      run: cd src && dotnet workload install maui
   
+    - name: Extract iOS code signing certificate from env
+      uses: timheuer/base64-to-file@v1.2
+      with:
+          fileDir: './'
+          fileName: 'DistributionCert.p12'
+          encodedString: ${{ secrets.APPSTORE_CODE_SIGNING_CERTIFICATE_FILE_BASE64 }}
+
+    - name: Import Code-Signing Certificates
+      uses: apple-actions/import-codesign-certs@v2
+      with:
+        p12-filepath: './DistributionCert.p12'
+        p12-password: ${{ secrets.APPSTORE_CODE_SIGNING_CERTIFICATE_FILE_PASSWORD }}
+
+    - name: Download Apple Provisioning Profiles
+      uses: Apple-Actions/download-provisioning-profiles@v1
+      with:
+        bundle-id: 'com.sharpsoft.maui.app'
+        issuer-id: ${{ secrets.APPSTORE_API_KEY_ISSUER_ID }}
+        api-key-id: ${{ secrets.APPSTORE_API_KEY_ID }}
+        api-private-key: ${{ secrets.APPSTORE_API_KEY_PRIVATE_KEY }}
+
     - name: Generate CSS/JS files
       run: |
           dotnet build src/Client/SharpSoft.App.Client.Core/SharpSoft.App.Client.Core.csproj -t:BeforeBuildTasks --no-restore
           dotnet build src/Client/SharpSoft.App.Client.Maui/SharpSoft.App.Client.Maui.csproj -t:BeforeBuildTasks --no-restore
   
-    - name: Build apk
-      run: dotnet build src/Client/SharpSoft.App.Client.Maui/SharpSoft.App.Client.Maui.csproj -c Release -p:AndroidKeyStore=true -p:AndroidSigningKeyStore="SharpSoft.App.keystore" -p:AndroidSigningKeyAlias=SharpSoft.App -p:AndroidSigningKeyPass="${{ secrets.ANDROID_RELEASE_KEYSTORE_PASSWORD }}" -p:AndroidSigningStorePass="${{ secrets.ANDROID_RELEASE_SIGNING_PASSWORD }}" -f net8.0-android
-   
-    - name: Build aab
-      run: dotnet build src/Client/SharpSoft.App.Client.Maui/SharpSoft.App.Client.Maui.csproj -c Release -p:AndroidPackageFormat=aab -p:AndroidKeyStore=true -p:AndroidSigningKeyStore="SharpSoft.App.keystore" -p:AndroidSigningKeyAlias=SharpSoft.App -p:AndroidSigningKeyPass="${{ secrets.ANDROID_RELEASE_KEYSTORE_PASSWORD }}" -p:AndroidSigningStorePass="${{ secrets.ANDROID_RELEASE_SIGNING_PASSWORD }}" -f net8.0-android
-  
-    - name: Upload artifact
-      uses: actions/upload-artifact@v4
-      with:
-        name: android-bundle
-        path: src/Client/SharpSoft.App.Client.Maui/bin/Release/net8.0-android/*-Signed.*
+    - name: Build ipa
+      run: dotnet publish src/Client/SharpSoft.App.Client.Maui/SharpSoft.App.Client.Maui.csproj -p:RuntimeIdentifier=ios-arm64 -c Release -p:ArchiveOnBuild=true -p:CodesignKey="Apple Distribution" -p:CodesignProvision="SharpSoftApp"  -p:ApplicationDisplayVersion="${{ vars.APPLICATION_DISPLAY_VERSION }}" -p:ApplicationVersion="${{ vars.APPLICATION_VERSION }}" -f net8.0-ios
 
-    - name: Download artifact
-      uses: actions/download-artifact@v4
+    - name: Upload artifact
+      uses: actions/upload-artifact@v2
       with:
-        name: android-bundle
-        run: ls -R
+        name: iOS-bundle
+        path: src/Client/SharpSoft.App.Client.Maui/bin/release/net8.0-ios/ios-arm64/publish/*.ipa
+        
+  
   
