@@ -5,7 +5,7 @@ name: SharpSoft.App CD
 env:
   API_SERVER_ADDRESS: 'https://kingforce.sharpsoftco.com/'
   APP_SERVICE_NAME: 'app-service-bp-test'
-  IOS_CODE_SIGN_PROVISION: 'sharpsoftco-sharpApp'
+  IOS_CODE_SIGN_PROVISION: 'SharpSoftApp'
 
 on:
   workflow_dispatch:
@@ -64,7 +64,7 @@ jobs:
     - name: Download Apple Provisioning Profiles
       uses: Apple-Actions/download-provisioning-profiles@v1
       with:
-        bundle-id: 'com.sharpsoft.app'
+        bundle-id: 'com.sharpsoft.maui.app'
         issuer-id: ${{ secrets.APPSTORE_API_KEY_ISSUER_ID }}
         api-key-id: ${{ secrets.APPSTORE_API_KEY_ID }}
         api-private-key: ${{ secrets.APPSTORE_API_KEY_PRIVATE_KEY }}
@@ -75,7 +75,7 @@ jobs:
           dotnet build src/Client/SharpSoft.App.Client.Maui/SharpSoft.App.Client.Maui.csproj -t:BeforeBuildTasks --no-restore
   
     - name: Build ipa
-      run: dotnet publish src/Client/SharpSoft.App.Client.Maui/SharpSoft.App.Client.Maui.csproj -p:RuntimeIdentifier=ios-arm64 -c Release -p:ArchiveOnBuild=true -p:CodesignKey="Apple Distribution" -p:CodesignProvision="sharpsoftco-sharpApp"  -p:ApplicationDisplayVersion="${{ vars.APPLICATION_DISPLAY_VERSION }}" -p:ApplicationVersion="${{ vars.APPLICATION_VERSION }}" -f net8.0-ios
+      run: dotnet publish src/Client/SharpSoft.App.Client.Maui/SharpSoft.App.Client.Maui.csproj -p:RuntimeIdentifier=ios-arm64 -c Release -p:ArchiveOnBuild=true -p:CodesignKey="Apple Distribution" -p:CodesignProvision="SharpSoftApp"  -p:ApplicationDisplayVersion="${{ vars.APPLICATION_DISPLAY_VERSION }}" -p:ApplicationVersion="${{ vars.APPLICATION_VERSION }}" -f net8.0-ios
 
     - name: Upload artifact
       uses: actions/upload-artifact@v2
