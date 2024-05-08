@@ -9,7 +9,7 @@ namespace SharpSoft.App.Client.Maui.Platforms.Android;
 
 [IntentFilter([Intent.ActionView],
                         DataScheme = "https",
-                        DataHost = "135.181.171.147",
+                        DataHost = "erp.sharpsoftco.com",
                         DataPathPrefix = "/",
                         AutoVerify = true,
                         Categories = [Intent.ActionView, Intent.CategoryDefault, Intent.CategoryBrowsable])]

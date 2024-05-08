@@ -117,466 +117,377 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="RequiredAttribute_ValidationError" xml:space="preserve">
-    <value>Le champ {0} est obligatoire.</value>
-  </data>
-  <data name="CompareAttribute_ValidationError" xml:space="preserve">
-    <value>« {0} » et « {1} » ne correspondent pas.</value>
-  </data>
-  <data name="EmailAddressAttribute_ValidationError" xml:space="preserve">
-    <value>Le champ {0} n'est pas une adresse e-mail valide.</value>
-  </data>
-  <data name="MaxLengthAttribute_InvalidMaxLength" xml:space="preserve">
-    <value>MaxLengthAttribute must have a Length value that is greater than zero. Use MaxLength() without parameters to indicate that the string or array can have the maximum allowable length.</value>
-  </data>
-  <data name="MinLengthAttribute_ValidationError" xml:space="preserve">
-    <value>Le champ {0} doit être de type chaîne ou tableau avec une longueur minimale de « {1} ».</value>
-  </data>
-  <data name="RangeAttribute_ValidationError" xml:space="preserve">
-    <value>Le champ {0} doit être compris entre {1} et {2}.</value>
-  </data>
-  <data name="DuplicateEmail" xml:space="preserve">
-    <value>L'e-mail '{0}' est déjà pris.</value>
-  </data>
-  <data name="UserLockedOut" xml:space="preserve">
-    <value>L'utilisateur est verrouillé. Réessayez dans {0}</value>
-  </data>
-  <data name="UserNameNotFound" xml:space="preserve">
-    <value>L'utilisateur {0} n'existe pas.</value>
-  </data>
-  <data name="BadRequestException" xml:space="preserve">
-    <value>Requête invalide</value>
-  </data>
-  <data name="ConflictException" xml:space="preserve">
-    <value>La demande n'a pas pu être traitée en raison d'un conflit dans la demande</value>
-  </data>
-  <data name="ForbiddenException" xml:space="preserve">
-    <value>L'accès à la ressource demandée est interdit</value>
-  </data>
-  <data name="ResourceValidationException" xml:space="preserve">
-    <value>Les données de la demande ne sont pas valides</value>
-  </data>
-  <data name="RestException" xml:space="preserve">
-    <value>Une erreur s'est produite lors de la communication avec le serveur</value>
-  </data>
-  <data name="UnauthorizedException" xml:space="preserve">
-    <value>Votre demande ne contient pas d'informations d'authentification valides</value>
-  </data>
-  <data name="UnknownException" xml:space="preserve">
-    <value>Une erreur inconnue s'est produite</value>
-  </data>
-  <data name="UpdateConcurrencyException" xml:space="preserve">
-    <value>L'enregistrement a été modifié par un autre utilisateur après avoir obtenu les données d'origine.</value>
-  </data>
-  <data name="ResourceNotFoundException" xml:space="preserve">
-    <value>Ressource introuvable</value>
-  </data>
-  <data name="TooManyRequestsExceptions" xml:space="preserve">
-    <value>Trop de demandes</value>
-  </data>
-  <data name="ServerConnectionException" xml:space="preserve">
-    <value>Incapable de se connecter au serveur.</value>
-  </data>
-  <data name="Active" xml:space="preserve">
-    <value>Actif</value>
-  </data>
-  <data name="All" xml:space="preserve">
-    <value>Tous</value>
-  </data>
-  <data name="Alphabetical" xml:space="preserve">
-    <value>Alphabétique</value>
-  </data>
-  <data name="Completed" xml:space="preserve">
-    <value>Complété</value>
-  </data>
-  <data name="Date" xml:space="preserve">
-    <value>Date</value>
-  </data>
-  <data name="EditProfileTitle" xml:space="preserve">
-    <value>Editer le profil</value>
-  </data>
-  <data name="OfflineEditProfileTitle" xml:space="preserve">
-    <value>Modifier le profil hors ligne</value>
-  </data>
-  <data name="FullName" xml:space="preserve">
-    <value>Nom et prénom</value>
-  </data>
-  <data name="TermsTitle" xml:space="preserve">
-    <value>Termes</value>
-  </data>
-  <data name="ProfileUpdatedSuccessfullyMessage" xml:space="preserve">
-    <value>Mise à jour du profil réussie.</value>
-  </data>
-  <data name="ConfirmNewPassword" xml:space="preserve">
-    <value>Confirmer le nouveau mot de passe</value>
-  </data>
-  <data name="Email" xml:space="preserve">
-    <value>E-mail</value>
-  </data>
-  <data name="Password" xml:space="preserve">
-    <value>Mot de passe</value>
-  </data>
-  <data name="PasswordChangedSuccessfullyMessage" xml:space="preserve">
-    <value>Votre mot de passe a changé avec succès.</value>
-  </data>
-  <data name="ResendConfirmationLinkMessage" xml:space="preserve">
-    <value>Le lien de confirmation a été renvoyé à votre adresse e-mail.</value>
-  </data>
-  <data name="ResetPasswordLinkSentMessage" xml:space="preserve">
-    <value>Le lien de réinitialisation du mot de passe a été envoyé à votre adresse e-mail.</value>
-  </data>
-  <data name="UserImageCouldNotBeFound" xml:space="preserve">
-    <value>L'image de l'utilisateur est introuvable</value>
-  </data>
-  <data name="CategoryCouldNotBeFound" xml:space="preserve">
-    <value>L'entité de catégorie est introuvable</value>
-  </data>
-  <data name="ProductCouldNotBeFound" xml:space="preserve">
-    <value>L'entité du produit est introuvable</value>
-  </data>
-  <data name="CategoryNotEmpty" xml:space="preserve">
-    <value>Cette catégorie contient certains produits, vous ne pouvez donc pas la supprimer</value>
-  </data>
-  <data name="Error" xml:space="preserve">
-    <value>Erreur</value>
-  </data>
-  <data name="WaitForResetPasswordEmailResendDelay" xml:space="preserve">
-    <value>Vous avez déjà demandé l'e-mail de réinitialisation du mot de passe.</value>
-  </data>
-  <data name="TermsAccepted" xml:space="preserve">
-    <value>Est-ce que j'accepte les conditions ?</value>
-  </data>
-  <data name="YouHaveToAcceptTerms" xml:space="preserve">
-    <value>Vous devez accepter nos conditions.</value>
-  </data>
-  <data name="Gender" xml:space="preserve">
-    <value>Genre</value>
-  </data>
-  <data name="BirthDate" xml:space="preserve">
-    <value>Date de naissance</value>
-  </data>
-  <data name="Name" xml:space="preserve">
-    <value>Nom</value>
-  </data>
-  <data name="Category" xml:space="preserve">
-    <value>Catégorie</value>
-  </data>
-  <data name="Description" xml:space="preserve">
-    <value>Description</value>
-  </data>
-  <data name="Price" xml:space="preserve">
-    <value>Prix</value>
-  </data>
-  <data name="Categories" xml:space="preserve">
-    <value>Catégories</value>
-  </data>
-  <data name="ProductCategory" xml:space="preserve">
-    <value>Catégorie de produit</value>
-  </data>
-  <data name="Products" xml:space="preserve">
-    <value>Des produits</value>
-  </data>
-  <data name="AreYouSureWannaDeleteCategory" xml:space="preserve">
-    <value>Etes-vous sûr de vouloir supprimer la catégorie {0}</value>
-  </data>
-  <data name="AreYouSureWannaDeleteProduct" xml:space="preserve">
-    <value>Êtes-vous sûr de vouloir supprimer le produit {0}</value>
-  </data>
-  <data name="DeleteCategory" xml:space="preserve">
-    <value>Supprimer la catégorie</value>
-  </data>
-  <data name="DeleteProduct" xml:space="preserve">
-    <value>Supprimer le produit</value>
-  </data>
-  <data name="YouNeedToSignIn" xml:space="preserve">
-    <value>Vous devez être connecté pour continuer.</value>
-  </data>
-  <data name="InvalidUsernameOrPassword" xml:space="preserve">
-    <value>Nom d'utilisateur ou mot de passe invalide</value>
-  </data>
-  <data name="WaitForConfirmationEmailResendDelay" xml:space="preserve">
-    <value>Vous avez déjà demandé l'e-mail de confirmation.</value>
-  </data>
-  <data name="EmailAlreadyConfirmed" xml:space="preserve">
-    <value>Votre email est déjà confirmé.</value>
-  </data>
-  <data name="TodoTitle" xml:space="preserve">
-    <value>Faire</value>
-  </data>
-  <data name="Title" xml:space="preserve">
-    <value>Titre</value>
-  </data>
-  <data name="ToDoItemCouldNotBeFound" xml:space="preserve">
-    <value>L'élément à faire est introuvable</value>
-  </data>
-  <data name="AreYouSureWannaDelete" xml:space="preserve">
-    <value>Etes-vous sûr de vouloir supprimer {0}?</value>
-  </data>
-  <data name="DeleteTodoItem" xml:space="preserve">
-    <value>Supprimer l'élément à faire</value>
-  </data>
-  <data name="Home" xml:space="preserve">
-    <value>Maison</value>
-  </data>
-  <data name="Add" xml:space="preserve">
-    <value>Ajouter</value>
-  </data>
-  <data name="AlreadyHaveAccountMessage" xml:space="preserve">
-    <value>Vous avez déjà un compte?</value>
-  </data>
-  <data name="ConfirmEmailMessage" xml:space="preserve">
-    <value>Nous avons envoyé un lien de confirmation à votre adresse e-mail.</value>
-  </data>
-  <data name="ConfirmEmailTitle" xml:space="preserve">
-    <value>confirmez votre adresse email</value>
-  </data>
-  <data name="DeleteAccount" xml:space="preserve">
-    <value>Supprimer le compte</value>
-  </data>
-  <data name="DeleteAccountPrompt" xml:space="preserve">
-    <value>Êtes-vous sûr de vouloir supprimer votre compte ?</value>
-  </data>
-  <data name="DontHaveAccountMessage" xml:space="preserve">
-    <value>Vous n'avez pas de compte ?</value>
-  </data>
-  <data name="Edit" xml:space="preserve">
-    <value>Modifier</value>
-  </data>
-  <data name="EmailConfirmationFailedMessage" xml:space="preserve">
-    <value>Échec de la confirmation par e-mail !</value>
-  </data>
-  <data name="EmailConfirmationTitle" xml:space="preserve">
-    <value>confirmation de l'émail</value>
-  </data>
-  <data name="EmailConfirmedSuccessfullyMessage" xml:space="preserve">
-    <value>E-mail confirmé avec succès !</value>
-  </data>
-  <data name="FileUploadFailed" xml:space="preserve">
-    <value>Une erreur s'est produite lors du téléchargement du fichier</value>
-  </data>
-  <data name="ForgetPasswordMessage" xml:space="preserve">
-    <value>Veuillez saisir l'adresse e-mail avec laquelle vous avez été inscrit afin que nous puissions envoyer un lien de réinitialisation du mot de passe à votre adresse e-mail.</value>
-  </data>
-  <data name="ForgetPasswordTitle" xml:space="preserve">
-    <value>Mot de passe oublié</value>
-  </data>
-  <data name="GenderMale" xml:space="preserve">
-    <value>Mâle</value>
-  </data>
-  <data name="GenderOther" xml:space="preserve">
-    <value>Autre</value>
-  </data>
-  <data name="GitHubRepo" xml:space="preserve">
-    <value>Dépôt GitHub</value>
-  </data>
-  <data name="GoToToday" xml:space="preserve">
-    <value>Allez à aujourd'hui</value>
-  </data>
-  <data name="HomeMessage" xml:space="preserve">
-    <value>Créez facilement votre application Blazor multimode (WASM, serveur, hybride, pré-rendu) dans les plus brefs délais !</value>
-  </data>
-  <data name="HomeTitle" xml:space="preserve">
-    <value>Accueil SharpSoft.App</value>
-  </data>
-  <data name="InvalidConfirmationLinkMessage" xml:space="preserve">
-    <value>Il semble que le lien de confirmation soit invalide ou ait expiré.</value>
-  </data>
-  <data name="NewPassword" xml:space="preserve">
-    <value>nouveau mot de passe</value>
-  </data>
-  <data name="No" xml:space="preserve">
-    <value>Non</value>
-  </data>
-  <data name="NotReceivedConfirmationEmailMessage" xml:space="preserve">
-    <value>Vous n'avez pas reçu l'e-mail de confirmation ?</value>
-  </data>
-  <data name="Or" xml:space="preserve">
-    <value>OU</value>
-  </data>
-  <data name="ProfileImage" xml:space="preserve">
-    <value>Image de profil</value>
-  </data>
-  <data name="Remove" xml:space="preserve">
-    <value>Retirer</value>
-  </data>
-  <data name="ResendEmail" xml:space="preserve">
-    <value>Ré-envoyer l'email</value>
-  </data>
-  <data name="ResetPasswordTitle" xml:space="preserve">
-    <value>Réinitialiser le mot de passe</value>
-  </data>
-  <data name="Save" xml:space="preserve">
-    <value>Sauvegarder</value>
-  </data>
-  <data name="SignInTitle" xml:space="preserve">
-    <value>Se connecter</value>
-  </data>
-  <data name="SignOut" xml:space="preserve">
-    <value>se déconnecter</value>
-  </data>
-  <data name="SignOutPrompt" xml:space="preserve">
-    <value>Êtes-vous certain de vouloir vous déconnecter?</value>
-  </data>
-  <data name="SignUp" xml:space="preserve">
-    <value>S'inscrire</value>
-  </data>
-  <data name="SingUpTitle" xml:space="preserve">
-    <value>S'inscrire</value>
-  </data>
-  <data name="Submit" xml:space="preserve">
-    <value>Soumettre</value>
-  </data>
-  <data name="TermsMessage" xml:space="preserve">
-    <value>je suis d'accord avec le</value>
-  </data>
-  <data name="UploadNewProfileImage" xml:space="preserve">
-    <value>Téléchargez une nouvelle image de profil</value>
-  </data>
-  <data name="Yes" xml:space="preserve">
-    <value>Oui</value>
-  </data>
-  <data name="TodoAddPlaceholder" xml:space="preserve">
-    <value>Ajouter une tâche</value>
-  </data>
-  <data name="TodoSearchPlaceholder" xml:space="preserve">
-    <value>Rechercher des choses à faire...</value>
-  </data>
-  <data name="SelectBirthDate" xml:space="preserve">
-    <value>Sélectionnez votre date de naissance</value>
-  </data>
-  <data name="SelectCategory" xml:space="preserve">
-    <value>Choisir une catégorie</value>
-  </data>
-  <data name="TotalCategories" xml:space="preserve">
-    <value>Catégories totales</value>
-  </data>
-  <data name="TotalProducts" xml:space="preserve">
-    <value>Produits totaux</value>
-  </data>
-  <data name="EditCategory" xml:space="preserve">
-    <value>Modifier la catégorie</value>
-  </data>
-  <data name="AddCategory" xml:space="preserve">
-    <value>Nouvelle catégorie</value>
-  </data>
-  <data name="CategoriesPageTitle" xml:space="preserve">
-    <value>Catégories</value>
-  </data>
-  <data name="EnterCategoryName" xml:space="preserve">
-    <value>Entrez le nom de la catégorie</value>
-  </data>
-  <data name="EnterProductName" xml:space="preserve">
-    <value>Entrez le nom du produit</value>
-  </data>
-  <data name="Last30DaysCategoryCount" xml:space="preserve">
-    <value>Nombre de catégories des 30 derniers jours</value>
-  </data>
-  <data name="ProductSales" xml:space="preserve">
-    <value>Ventes de produits</value>
-  </data>
-  <data name="ProductSalesText" xml:space="preserve">
-    <value>Ce graphique montre le numéro de vente de chaque produit.</value>
-  </data>
-  <data name="SearchOnName" xml:space="preserve">
-    <value>Rechercher sur le nom</value>
-  </data>
-  <data name="ProductsCountPerCategoryChart" xml:space="preserve">
-    <value>Tableau du nombre de produits par catégorie</value>
-  </data>
-  <data name="ProductsCountPerCategoryChartText" xml:space="preserve">
-    <value>Ce graphique montre le nombre de produits dans chaque catégorie.</value>
-  </data>
-  <data name="ProductsPageTitle" xml:space="preserve">
-    <value>Des produits</value>
-  </data>
-  <data name="ProductsPercentagePerCategory" xml:space="preserve">
-    <value>Pourcentage de produits par catégorie</value>
-  </data>
-  <data name="ProductsPercentagePerCategoryText" xml:space="preserve">
-    <value>Ce graphique montre le pourcentage de produits dans chaque catégorie.</value>
-  </data>
-  <data name="SignIn" xml:space="preserve">
-    <value>Se connecter</value>
-  </data>
-  <data name="SignInAsDifferentUser" xml:space="preserve">
-    <value>Connectez-vous en tant qu'utilisateur différent</value>
-  </data>
-  <data name="YouAreSignInAs" xml:space="preserve">
-    <value>Vous êtes connecté en tant que</value>
-  </data>
-  <data name="ResetPassword" xml:space="preserve">
-    <value>Réinitialiser le mot de passe</value>
-  </data>
-  <data name="NoTodos" xml:space="preserve">
-    <value>Aucune tâche pour l'instant</value>
-  </data>
-  <data name="AddProduct" xml:space="preserve">
-    <value>Ajouter un produit</value>
+  <data name="AboutTitle" xml:space="preserve">
+    <value>عن</value>
   </data>
   <data name="Action" xml:space="preserve">
-    <value>Action</value>
+    <value>فعل</value>
+  </data>
+  <data name="Active" xml:space="preserve">
+    <value>نشيط</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>يضيف</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>الجميع</value>
+  </data>
+  <data name="Alphabetical" xml:space="preserve">
+    <value>مرتب حسب الحروف الأبجدية</value>
+  </data>
+  <data name="AlreadyHaveAccountMessage" xml:space="preserve">
+    <value>هل لديك حساب؟</value>
+  </data>
+  <data name="AreYouSureWannaDelete" xml:space="preserve">
+    <value>هل أنت متأكد أنك تريد حذف {0}؟</value>
   </data>
   <data name="Back" xml:space="preserve">
-    <value>Dos</value>
+    <value>خلف</value>
+  </data>
+  <data name="BadRequestException" xml:space="preserve">
+    <value>طلب غير صالح</value>
+  </data>
+  <data name="BirthDate" xml:space="preserve">
+    <value>تاريخ الميلاد</value>
   </data>
   <data name="Cancel" xml:space="preserve">
-    <value>Annuler</value>
+    <value>يلغي</value>
+  </data>
+  <data name="CheckIn" xml:space="preserve">
+    <value>تحقق في</value>
+  </data>
+  <data name="CheckOut" xml:space="preserve">
+    <value>الدفع</value>
   </data>
   <data name="CheckSpamMailMessage" xml:space="preserve">
-    <value>Vérifiez vos spams/indésirables si vous ne les trouvez pas dans la boîte de réception.</value>
+    <value>تحقق من الرسائل غير المرغوب فيها/الرسائل غير المرغوب فيها، إذا لم تتمكن من العثور عليها في البريد الوارد.</value>
+  </data>
+  <data name="Code" xml:space="preserve">
+    <value>شفرة</value>
   </data>
   <data name="Color" xml:space="preserve">
-    <value>Couleur</value>
+    <value>لون</value>
+  </data>
+  <data name="CompareAttribute_ValidationError" xml:space="preserve">
+    <value>{0}' و'{1}' غير متطابقين.</value>
+  </data>
+  <data name="Completed" xml:space="preserve">
+    <value>مكتمل</value>
+  </data>
+  <data name="ConfirmEmailMessage" xml:space="preserve">
+    <value>لقد أرسلنا رابط تأكيد إلى عنوان بريدك الإلكتروني.
+يرجى تأكيد بريدك الإلكتروني بالضغط على الرابط.</value>
+  </data>
+  <data name="ConfirmEmailTitle" xml:space="preserve">
+    <value>أكد عنوان بريدك الألكتروني</value>
+  </data>
+  <data name="ConfirmNewPassword" xml:space="preserve">
+    <value>تأكيد كلمة المرور الجديدة</value>
+  </data>
+  <data name="ConflictException" xml:space="preserve">
+    <value>تعذرت معالجة الطلب بسبب وجود تعارض في الطلب</value>
   </data>
   <data name="CustomColor" xml:space="preserve">
-    <value>Couleur personnalisée</value>
+    <value>لون مخصص</value>
   </data>
-  <data name="DefaultColorPicker" xml:space="preserve">
-    <value>Sélecteur de couleurs par défaut</value>
+  <data name="Date" xml:space="preserve">
+    <value>تاريخ</value>
   </data>
   <data name="Delete" xml:space="preserve">
-    <value>Supprimer</value>
+    <value>يمسح</value>
   </data>
-  <data name="Id" xml:space="preserve">
-    <value>Identifiant</value>
+  <data name="DeleteAccount" xml:space="preserve">
+    <value>حذف الحساب</value>
+  </data>
+  <data name="DeleteAccountPrompt" xml:space="preserve">
+    <value>هل انت متأكد انك تريد حذف حسابك؟</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>وصف</value>
+  </data>
+  <data name="DontHaveAccountMessage" xml:space="preserve">
+    <value>ليس لديك حساب؟</value>
+  </data>
+  <data name="DuplicateEmail" xml:space="preserve">
+    <value>البريد الإلكتروني '{0}' مأخوذ بالفعل.</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>يحرر</value>
+  </data>
+  <data name="EditProfileTitle" xml:space="preserve">
+    <value>تعديل الملف الشخصي</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>بريد إلكتروني</value>
+  </data>
+  <data name="EmailAddressAttribute_ValidationError" xml:space="preserve">
+    <value>الحقل {0} ليس عنوان بريد إلكتروني صالحًا.</value>
+  </data>
+  <data name="EmailAlreadyConfirmed" xml:space="preserve">
+    <value>تم تأكيد بريدك الإلكتروني بالفعل.</value>
+  </data>
+  <data name="EmailConfirmationFailedMessage" xml:space="preserve">
+    <value>فشل تأكيد البريد الإلكتروني!</value>
+  </data>
+  <data name="EmailConfirmationTitle" xml:space="preserve">
+    <value>تأكيد البريد الإلكتروني</value>
+  </data>
+  <data name="EmailConfirmedSuccessfullyMessage" xml:space="preserve">
+    <value>تم تأكيد البريد الإلكتروني بنجاح!</value>
+  </data>
+  <data name="EnterServerAddress" xml:space="preserve">
+    <value>أدخل عنوان الخادم الخاص بك</value>
+  </data>
+  <data name="EnterServerAddressPlaceholder" xml:space="preserve">
+    <value>https://domain.com</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>خطأ</value>
+  </data>
+  <data name="FileUploadFailed" xml:space="preserve">
+    <value>حدث خطأ أثناء تحميل الملف</value>
+  </data>
+  <data name="ForbiddenException" xml:space="preserve">
+    <value>الوصول إلى المورد المطلوب محظور</value>
+  </data>
+  <data name="ForgetPasswordMessage" xml:space="preserve">
+    <value>يرجى إدخال عنوان البريد الإلكتروني الذي قمت بالتسجيل به حتى نتمكن من إرسال رابط إعادة تعيين كلمة المرور إلى عنوان بريدك الإلكتروني.</value>
+  </data>
+  <data name="ForgetPasswordTitle" xml:space="preserve">
+    <value>نسيت كلمة المرور</value>
   </data>
   <data name="ForgotPasswordLink" xml:space="preserve">
-    <value>Mot de passe oublié?</value>
+    <value>هل نسيت كلمة السر؟</value>
   </data>
-  <data name="Last30DaysProductCount" xml:space="preserve">
-    <value>Nombre de produits des 30 derniers jours</value>
+  <data name="FullName" xml:space="preserve">
+    <value>الاسم الكامل</value>
+  </data>
+  <data name="Gender" xml:space="preserve">
+    <value>جنس</value>
   </data>
   <data name="GenderFemale" xml:space="preserve">
-    <value>Femelle</value>
+    <value>أنثى</value>
   </data>
-  <data name="EditProduct" xml:space="preserve">
-    <value>Modifier le produit</value>
+  <data name="GenderMale" xml:space="preserve">
+    <value>ذكر</value>
   </data>
-  <data name="Dashboard" xml:space="preserve">
-    <value>Tableau de bord</value>
+  <data name="GenderOther" xml:space="preserve">
+    <value>آخر</value>
   </data>
-  <data name="RememberMe" xml:space="preserve">
-    <value>Souviens-toi de moi?</value>
+  <data name="GitHubRepo" xml:space="preserve">
+    <value>جيثب الريبو</value>
   </data>
-  <data name="Update" xml:space="preserve">
-    <value>Mise à jour</value>
+  <data name="GoToToday" xml:space="preserve">
+    <value>اذهب الى اليوم</value>
   </data>
-  <data name="ProductsCount" xml:space="preserve">
-    <value>Les produits comptent</value>
+  <data name="Home" xml:space="preserve">
+    <value>بيت</value>
+  </data>
+  <data name="HomeMessage" xml:space="preserve">
+    <value>قم بإنشاء تطبيق Blazor متعدد الأوضاع (WASM، Server، Hybrid، العرض المسبق) بسهولة في أقصر وقت على الإطلاق!</value>
+  </data>
+  <data name="HomeTitle" xml:space="preserve">
+    <value>SharpSoft</value>
+  </data>
+  <data name="Id" xml:space="preserve">
+    <value>بطاقة تعريف</value>
+  </data>
+  <data name="InvalidConfirmationLinkMessage" xml:space="preserve">
+    <value>يبدو أن رابط التأكيد إما غير صالح أو انتهت صلاحيته.</value>
+  </data>
+  <data name="InvalidUsernameOrPassword" xml:space="preserve">
+    <value>خطأ في اسم المستخدم أو كلمة مرور</value>
+  </data>
+  <data name="MaxLengthAttribute_InvalidMaxLength" xml:space="preserve">
+    <value>يجب أن يكون لدى MaxLengthAttribute قيمة طول أكبر من الصفر. استخدم MaxLength() بدون معلمات للإشارة إلى أن السلسلة أو الصفيف يمكن أن يكون له الحد الأقصى للطول المسموح به.</value>
+  </data>
+  <data name="MinLengthAttribute_ValidationError" xml:space="preserve">
+    <value>يجب أن يكون الحقل {0} عبارة عن سلسلة أو نوع مصفوفة بحد أدنى للطول '{1}'.</value>
+  </data>
+  <data name="MyAttendance" xml:space="preserve">
+    <value>حضوري</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>اسم</value>
+  </data>
+  <data name="NeedLocation" xml:space="preserve">
+    <value>نحن بحاجة إلى معرفة موقعك لقبول التتبع أو الخروج</value>
+  </data>
+  <data name="NewPassword" xml:space="preserve">
+    <value>كلمة المرور الجديدة</value>
   </data>
   <data name="NewVersionIsAvailable" xml:space="preserve">
-    <value>Une nouvelle version est disponible</value>
+    <value>الإصدار الجديد متاح</value>
   </data>
-  <data name="UpdateToNewVersion" xml:space="preserve">
-    <value>Souhaitez-vous mettre à jour vers la nouvelle version?</value>
-  </data>
-  <data name="AboutTitle" xml:space="preserve">
-    <value>À propos</value>
+  <data name="No" xml:space="preserve">
+    <value>لا</value>
   </data>
   <data name="NotFoundText" xml:space="preserve">
-    <value>Il n'y a rien ici.</value>
+    <value>لا يوجد شيء هنا.</value>
+  </data>
+  <data name="NotReceivedConfirmationEmailMessage" xml:space="preserve">
+    <value>لم تتلق رسالة التأكيد عبر البريد الإلكتروني؟</value>
+  </data>
+  <data name="Or" xml:space="preserve">
+    <value>أو</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>كلمة المرور</value>
+  </data>
+  <data name="PasswordChangedSuccessfullyMessage" xml:space="preserve">
+    <value>تم تغيير كلمة المرور الخاصة بك بنجاح.</value>
+  </data>
+  <data name="Price" xml:space="preserve">
+    <value>سعر</value>
+  </data>
+  <data name="ProfileImage" xml:space="preserve">
+    <value>صورة الملف الشخصي</value>
+  </data>
+  <data name="ProfileUpdatedSuccessfullyMessage" xml:space="preserve">
+    <value>تم تحديث الملف الشخصي بنجاح.</value>
+  </data>
+  <data name="RangeAttribute_ValidationError" xml:space="preserve">
+    <value>يجب أن يكون الحقل {0} بين {1} و{2}.</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>ينعش</value>
+  </data>
+  <data name="RememberMe" xml:space="preserve">
+    <value>تذكرنى؟</value>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>يزيل</value>
+  </data>
+  <data name="RequiredAttribute_ValidationError" xml:space="preserve">
+    <value>الحقل {0} مطلوب.</value>
+  </data>
+  <data name="ResendConfirmationLinkMessage" xml:space="preserve">
+    <value>تمت إعادة إرسال رابط التأكيد إلى عنوان بريدك الإلكتروني.</value>
+  </data>
+  <data name="ResendEmail" xml:space="preserve">
+    <value>إعادة إرسال البريد الإلكتروني</value>
+  </data>
+  <data name="ResetPassword" xml:space="preserve">
+    <value>إعادة تعيين كلمة المرور</value>
+  </data>
+  <data name="ResetPasswordLinkSentMessage" xml:space="preserve">
+    <value>تم إرسال رابط إعادة تعيين كلمة المرور إلى عنوان بريدك الإلكتروني.</value>
+  </data>
+  <data name="ResetPasswordTitle" xml:space="preserve">
+    <value>إعادة تعيين كلمة المرور</value>
+  </data>
+  <data name="ResourceNotFoundException" xml:space="preserve">
+    <value>الموارد غير موجود</value>
+  </data>
+  <data name="ResourceValidationException" xml:space="preserve">
+    <value>بيانات الطلب غير صالحة</value>
+  </data>
+  <data name="RestException" xml:space="preserve">
+    <value>حدث خطأ أثناء الاتصال بالخادم</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>يحفظ</value>
+  </data>
+  <data name="SelectBirthDate" xml:space="preserve">
+    <value>حدد تاريخ ميلادك</value>
+  </data>
+  <data name="ServerAddress" xml:space="preserve">
+    <value>عنوان المستقبل</value>
+  </data>
+  <data name="ServerAddressAttribute_ValidationError" xml:space="preserve">
+    <value>الحقل {0} ليس عنوان URL صالحًا.</value>
+  </data>
+  <data name="ServerConnectionException" xml:space="preserve">
+    <value>غير قادر على الإتصال بالسيرفر.</value>
+  </data>
+  <data name="SignIn" xml:space="preserve">
+    <value>تسجيل الدخول</value>
+  </data>
+  <data name="SignInAsDifferentUser" xml:space="preserve">
+    <value>قم بتسجيل الدخول كمستخدم مختلف</value>
+  </data>
+  <data name="SignInTitle" xml:space="preserve">
+    <value>تسجيل الدخول</value>
+  </data>
+  <data name="SignOut" xml:space="preserve">
+    <value>خروج</value>
+  </data>
+  <data name="SignOutPrompt" xml:space="preserve">
+    <value>هل أنت متأكد أنك تريد الخروج؟</value>
+  </data>
+  <data name="SignUp" xml:space="preserve">
+    <value>اشتراك</value>
+  </data>
+  <data name="SingUpTitle" xml:space="preserve">
+    <value>اشتراك</value>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>يُقدِّم</value>
   </data>
   <data name="SubmitCheckin" xml:space="preserve">
-    <value>Your check-in/check-out has submit successfully!</value>
+    <value>لقد تم إرسال تسجيل الوصول/المغادرة الخاص بك بنجاح!</value>
+  </data>
+  <data name="TermsAccepted" xml:space="preserve">
+    <value>هل قبول الشروط؟</value>
+  </data>
+  <data name="TermsMessage" xml:space="preserve">
+    <value>أنا أوافق على</value>
+  </data>
+  <data name="TermsTitle" xml:space="preserve">
+    <value>شروط</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>عنوان</value>
+  </data>
+  <data name="TooManyRequestsExceptions" xml:space="preserve">
+    <value>طلبات كثيرة جدا</value>
+  </data>
+  <data name="TurnOnLocation" xml:space="preserve">
+    <value>رجى تشغيل خدمة موقع الجهاز للوصول إلى موقعك</value>
+  </data>
+  <data name="UnauthorizedException" xml:space="preserve">
+    <value>يفتقر طلبك إلى بيانات اعتماد مصادقة صالحة</value>
+  </data>
+  <data name="UnknownException" xml:space="preserve">
+    <value>لقد حدث خطأ غير معروف</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>تحديث</value>
+  </data>
+  <data name="UpdateConcurrencyException" xml:space="preserve">
+    <value>تم تعديل السجل بواسطة مستخدم آخر بعد حصولك على البيانات الأصلية. تم إلغاء العملية.</value>
+  </data>
+  <data name="UpdateToNewVersion" xml:space="preserve">
+    <value>هل ترغب في التحديث إلى الإصدار الجديد؟</value>
+  </data>
+  <data name="UploadNewProfileImage" xml:space="preserve">
+    <value>قم بتحميل صورة الملف الشخصي الجديدة</value>
+  </data>
+  <data name="UserImageCouldNotBeFound" xml:space="preserve">
+    <value>لا يمكن العثور على صورة المستخدم</value>
+  </data>
+  <data name="UserLockedOut" xml:space="preserve">
+    <value>تم تأمين المستخدم. حاول مرة أخرى خلال {0}</value>
+  </data>
+  <data name="UserNameNotFound" xml:space="preserve">
+    <value>المستخدم {0} غير موجود.</value>
+  </data>
+  <data name="WaitForConfirmationEmailResendDelay" xml:space="preserve">
+    <value>لقد طلبت بالفعل رسالة التأكيد الإلكترونية. حاول مرة أخرى خلال {0}</value>
+  </data>
+  <data name="WaitForResetPasswordEmailResendDelay" xml:space="preserve">
+    <value>لقد طلبت بالفعل البريد الإلكتروني لإعادة تعيين كلمة المرور. حاول مرة أخرى خلال {0}</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>نعم</value>
+  </data>
+  <data name="YouAreSignInAs" xml:space="preserve">
+    <value>لقد قمت بتسجيل الدخول كـ</value>
+  </data>
+  <data name="YouHaveToAcceptTerms" xml:space="preserve">
+    <value>يجب أن توافق على شروطنا.</value>
+  </data>
+  <data name="YouNeedToSignIn" xml:space="preserve">
+    <value>يجب عليك تسجيل الدخول للمتابعة.</value>
   </data>
 </root>

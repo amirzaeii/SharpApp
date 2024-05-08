@@ -422,7 +422,7 @@ namespace SharpSoft.App.Shared.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to http://domain.com or http://135.174.181.171.
+        ///   Looks up a localized string similar to https://domain.com.
         /// </summary>
         public static string EnterServerAddressPlaceholder {
             get {
@@ -566,7 +566,7 @@ namespace SharpSoft.App.Shared.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SharpSoft.App Home.
+        ///   Looks up a localized string similar to SharpSoft.
         /// </summary>
         public static string HomeTitle {
             get {
@@ -980,7 +980,7 @@ namespace SharpSoft.App.Shared.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Your check-in/check-out has submit successfully!.
+        ///   Looks up a localized string similar to Your check-in/check-out has submitted successfully!.
         /// </summary>
         public static string SubmitCheckin {
             get {
@@ -1034,7 +1034,7 @@ namespace SharpSoft.App.Shared.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Please turn on your location to access device location.
+        ///   Looks up a localized string similar to Please turn on device location service to access your location.
         /// </summary>
         public static string TurnOnLocation {
             get {

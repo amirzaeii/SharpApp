@@ -15,7 +15,7 @@
         <ApplicationTitle>SharpApp</ApplicationTitle>
 
         <!-- App Identifier -->
-        <ApplicationId>com.sharpsoft.app</ApplicationId>
+        <ApplicationId>com.sharpsoft.maui.app</ApplicationId>
         <ApplicationIdGuid>E04F6471-D4EF-494E-867F-E97B809F6564</ApplicationIdGuid>
 
         <!-- Versions -->

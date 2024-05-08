@@ -4,11 +4,11 @@ using Microsoft.JSInterop;
 
 namespace SharpSoft.App.Client.Core.Components.Pages;
 
-public partial class HomePage : AppComponentBase, IAsyncDisposable
+public partial class HomePage : AppComponentBase
 {
     private IJSObjectReference? module;
-    private string? result;
     private bool isLoading;
+   
     private bool okSubmited;
     private bool errorSubmited;
     private double[]? geoLocation;
@@ -56,7 +56,7 @@ public partial class HomePage : AppComponentBase, IAsyncDisposable
 
             if (module != null)
             {
-                result = await module.InvokeAsync<string>("load_map", Convert.ToString(raw));
+               await module.InvokeAsync<string>("load_map", Convert.ToString(raw));
             }
 
             await RefreshLocation();
@@ -110,14 +110,14 @@ public partial class HomePage : AppComponentBase, IAsyncDisposable
             StateHasChanged();
             return;
         }
-        result = await module.InvokeAsync<string>("refreshGeoLocation", JsonSerializer.Serialize(geoLocation));
+        await module.InvokeAsync<string>("refreshGeoLocation", JsonSerializer.Serialize(geoLocation));
         
     }
-    async ValueTask IAsyncDisposable.DisposeAsync()
-    {
-        if (module is not null)
-        {
-            await module.DisposeAsync();
-        }
-    }
+    //async ValueTask IAsyncDisposable.DisposeAsync()
+    //{
+        //if (module is not null)
+        //{
+        //    await module.DisposeAsync();
+        //}
+    //}
 }

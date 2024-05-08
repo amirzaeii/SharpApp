@@ -15,15 +15,14 @@ internal class MauiLocationService : ILocationService
         {
             _isCheckingLocation = true;
 
-            GeolocationRequest request = new GeolocationRequest(GeolocationAccuracy.Best, TimeSpan.FromSeconds(10));
-
             _cancelTokenSource = new CancellationTokenSource();
 
-            PermissionStatus status = await Permissions.CheckStatusAsync<Permissions.LocationAlways>();
+            var status = await Permissions.CheckStatusAsync<Permissions.LocationWhenInUse>();
             if (status != PermissionStatus.Granted)
             {
-                var permissionRequest = await Permissions.RequestAsync<Permissions.LocationAlways>();
+                var permissionRequest = await Permissions.RequestAsync<Permissions.LocationWhenInUse>();
             }
+            var request = new GeolocationRequest(GeolocationAccuracy.Best, TimeSpan.FromSeconds(10));
             var location = await Geolocation.Default.GetLocationAsync(request, _cancelTokenSource.Token);
 
             if (location != null)

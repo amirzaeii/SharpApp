@@ -117,467 +117,377 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="CompareAttribute_ValidationError" xml:space="preserve">
-    <value>"{0}" و "{1}" مطابقت ندارند.</value>
-  </data>
-  <data name="EmailAddressAttribute_ValidationError" xml:space="preserve">
-    <value>مقدار {0} یک آدرس ایمیل معتبر نیست.</value>
-  </data>
-  <data name="MaxLengthAttribute_InvalidMaxLength" xml:space="preserve">
-    <value>MaxLengthAttribute must have a Length value that is greater than zero. Use MaxLength() without parameters to indicate that the string or array can have the maximum allowable length.</value>
-  </data>
-  <data name="MinLengthAttribute_ValidationError" xml:space="preserve">
-    <value>مقدار {0} باید یک نوع رشته یا لیستی با حداقل طول "{1}" باشد.</value>
-  </data>
-  <data name="RangeAttribute_ValidationError" xml:space="preserve">
-    <value>مقدار {0} باید بین {1} و {2} باشد.</value>
-  </data>
-  <data name="RequiredAttribute_ValidationError" xml:space="preserve">
-    <value>مقدار {0} الزامی است.</value>
-  </data>
-  <data name="BadRequestException" xml:space="preserve">
-    <value>درخواست نامعتبر</value>
-  </data>
-  <data name="ConflictException" xml:space="preserve">
-    <value>درخواست به دلیل مغایرت داشتن پردازش نشد</value>
-  </data>
-  <data name="ForbiddenException" xml:space="preserve">
-    <value>دسترسی به منابع درخواست شده ممنوع است</value>
-  </data>
-  <data name="ResourceValidationException" xml:space="preserve">
-    <value>داده‌های درخواست معتبر نیستند</value>
-  </data>
-  <data name="RestException" xml:space="preserve">
-    <value>هنگام برقراری ارتباط با سرور خطایی رخ داد</value>
-  </data>
-  <data name="UnauthorizedException" xml:space="preserve">
-    <value>درخواست شما فاقد اعتبارنامه معتبر احراز هویت است</value>
-  </data>
-  <data name="UnknownException" xml:space="preserve">
-    <value>خطای ناشناخته رخ داده است</value>
-  </data>
-  <data name="UpdateConcurrencyException" xml:space="preserve">
-    <value>رکورد توسط یک کاربر دیگر پس از دریافت داده های اصلی تغییر یافته است. عملیات لغو شد.</value>
-  </data>
-  <data name="ResourceNotFoundException" xml:space="preserve">
-    <value>منبع یافت نشد</value>
-  </data>
-  <data name="TooManyRequestsExceptions" xml:space="preserve">
-    <value>درخواست های بیش از حد</value>
-  </data>
-  <data name="ServerConnectionException" xml:space="preserve">
-    <value>قادر به اتصال به سرور نیست.</value>
-  </data>
-  <data name="Active" xml:space="preserve">
-    <value>فعال</value>
-  </data>
-  <data name="All" xml:space="preserve">
-    <value>همه</value>
-  </data>
-  <data name="Alphabetical" xml:space="preserve">
-    <value>الفبایی</value>
-  </data>
-  <data name="Completed" xml:space="preserve">
-    <value>تمام شده</value>
-  </data>
-  <data name="Date" xml:space="preserve">
-    <value>تاریخ</value>
-  </data>
-  <data name="EditProfileTitle" xml:space="preserve">
-    <value>ویرایش پروفایل</value>
-  </data>
-  <data name="OfflineEditProfileTitle" xml:space="preserve">
-    <value>ویرایش پروفایل آفلاین</value>
-  </data>
-  <data name="FullName" xml:space="preserve">
-    <value>نام کامل</value>
-  </data>
-  <data name="TermsTitle" xml:space="preserve">
-    <value>شرایط</value>
-  </data>
-  <data name="ProfileUpdatedSuccessfullyMessage" xml:space="preserve">
-    <value>پروفایل با موفقیت به روز شد.</value>
-  </data>
-  <data name="ConfirmNewPassword" xml:space="preserve">
-    <value>تایید رمز عبور جدید</value>
-  </data>
-  <data name="Email" xml:space="preserve">
-    <value>ایمیل</value>
-  </data>
-  <data name="Password" xml:space="preserve">
-    <value>رمز عبور</value>
-  </data>
-  <data name="PasswordChangedSuccessfullyMessage" xml:space="preserve">
-    <value>رمز عبور شما با موفقیت تغییر کرد.</value>
-  </data>
-  <data name="ResendConfirmationLinkMessage" xml:space="preserve">
-    <value>لینک تایید دوباره به آدرس ایمیل شما ارسال شده است.</value>
-  </data>
-  <data name="ResetPasswordLinkSentMessage" xml:space="preserve">
-    <value>لینک ریست رمز عبور به آدرس ایمیل شما ارسال شده است.</value>
-  </data>
-  <data name="UserImageCouldNotBeFound" xml:space="preserve">
-    <value>تصویر کاربر پیدا نشد</value>
-  </data>
-  <data name="Error" xml:space="preserve">
-    <value>خطا</value>
-  </data>
-  <data name="WaitForResetPasswordEmailResendDelay" xml:space="preserve">
-    <value>شما قبلا درخواست تنظیم مجدد ایمیل رمز عبور را دارید. دوباره امتحان کنید در {0}</value>
-  </data>
-  <data name="TermsAccepted" xml:space="preserve">
-    <value>آیا شرایط را قبول دارید؟</value>
-  </data>
-  <data name="YouHaveToAcceptTerms" xml:space="preserve">
-    <value>شما باید با شرایط ما موافقت کنید.</value>
-  </data>
-  <data name="Gender" xml:space="preserve">
-    <value>جنسیت</value>
-  </data>
-  <data name="BirthDate" xml:space="preserve">
-    <value>تاریخ تولد</value>
-  </data>
-  <data name="Name" xml:space="preserve">
-    <value>نام</value>
-  </data>
-  <data name="Description" xml:space="preserve">
-    <value>توضیحات</value>
-  </data>
-  <data name="Price" xml:space="preserve">
-    <value>قيمت</value>
-  </data>
-  <data name="YouNeedToSignIn" xml:space="preserve">
-    <value>برای ادامه باید وارد شوید.</value>
-  </data>
-  <data name="InvalidUsernameOrPassword" xml:space="preserve">
-    <value>نام کاربری یا رمز عبور نامعتبر است</value>
-  </data>
-  <data name="WaitForConfirmationEmailResendDelay" xml:space="preserve">
-    <value>شما قبلا ایمیل تایید را درخواست کرده اید. دوباره امتحان کنید در {0}</value>
-  </data>
-  <data name="EmailAlreadyConfirmed" xml:space="preserve">
-    <value>ایمیل شما قبلا تایید شده است.</value>
-  </data>
-  <data name="Title" xml:space="preserve">
-    <value>عنوان</value>
-  </data>
-  <data name="AreYouSureWannaDelete" xml:space="preserve">
-    <value>آیا مطمئن هستید که می خواهید {0} را حذف کنید؟</value>
-  </data>
-  <data name="Home" xml:space="preserve">
-    <value>خانه</value>
-  </data>
-  <data name="UserLockedOut" xml:space="preserve">
-    <value>کاربر قفل شده است. دوباره امتحان کنید در {0}</value>
-  </data>
-  <data name="UserNameNotFound" xml:space="preserve">
-    <value>کاربر {0} وجود ندارد.</value>
-  </data>
-  <data name="DuplicateEmail" xml:space="preserve">
-    <value>ایمیل '{0}' قبلا گرفته شده است.</value>
-  </data>
-  <data name="Add" xml:space="preserve">
-    <value>اضافه کردن</value>
-  </data>
-  <data name="AlreadyHaveAccountMessage" xml:space="preserve">
-    <value>در حال حاضر یک حساب کاربری دارید؟</value>
-  </data>
-  <data name="ConfirmEmailMessage" xml:space="preserve">
-    <value>ما یک لینک تایید به آدرس ایمیل شما ارسال کرده ایم.
-لطفا ایمیل خود را با کلیک بر روی لینک تایید کنید.</value>
-  </data>
-  <data name="ConfirmEmailTitle" xml:space="preserve">
-    <value>آدرس ایمیل خود را تایید کنید</value>
-  </data>
-  <data name="DeleteAccount" xml:space="preserve">
-    <value>حذف حساب</value>
-  </data>
-  <data name="DeleteAccountPrompt" xml:space="preserve">
-    <value>آیا مطمئن هستید که می خواهید حساب خود را حذف کنید؟</value>
-  </data>
-  <data name="DontHaveAccountMessage" xml:space="preserve">
-    <value>حساب ندارید؟</value>
-  </data>
-  <data name="Edit" xml:space="preserve">
-    <value>ویرایش</value>
-  </data>
-  <data name="EmailConfirmationFailedMessage" xml:space="preserve">
-    <value>تایید ایمیل شکست خورد!</value>
-  </data>
-  <data name="EmailConfirmationTitle" xml:space="preserve">
-    <value>تایید ایمیل</value>
-  </data>
-  <data name="EmailConfirmedSuccessfullyMessage" xml:space="preserve">
-    <value>ایمیل با موفقیت تایید شد!</value>
-  </data>
-  <data name="FileUploadFailed" xml:space="preserve">
-    <value>هنگام بارگذاری فایل خطایی رخ داد</value>
-  </data>
-  <data name="ForgetPasswordMessage" xml:space="preserve">
-    <value>لطفا آدرس ایمیلی را که با آن ثبت نام کرده اید وارد کنید تا ما بتوانیم لینک ریست کردن رمز عبور را به آدرس ایمیل شما ارسال کنیم.</value>
-  </data>
-  <data name="ForgetPasswordTitle" xml:space="preserve">
-    <value>رمز عبور را فراموش کرده ام</value>
-  </data>
-  <data name="GenderMale" xml:space="preserve">
-    <value>مرد</value>
-  </data>
-  <data name="GenderOther" xml:space="preserve">
-    <value>غیره</value>
-  </data>
-  <data name="GitHubRepo" xml:space="preserve">
-    <value>ریپازیتوری گیتهاب</value>
-  </data>
-  <data name="GoToToday" xml:space="preserve">
-    <value>برو به امروز</value>
-  </data>
-  <data name="HomeMessage" xml:space="preserve">
-    <value>برنامه blazor مالتی مد (WASM, Server, Hybrid, pre-rendering) خود را به آسانی و در سریع‌ترین زمان بسازید</value>
-  </data>
-  <data name="HomeTitle" xml:space="preserve">
-    <value>صفحه اصلی SharpSoft.App</value>
-  </data>
-  <data name="InvalidConfirmationLinkMessage" xml:space="preserve">
-    <value>به نظر می رسد لینک تایید نامعتبر است یا منقضی شده است.</value>
-  </data>
-  <data name="NewPassword" xml:space="preserve">
-    <value>رمز عبور جدید</value>
-  </data>
-  <data name="No" xml:space="preserve">
-    <value>نه</value>
-  </data>
-  <data name="NotReceivedConfirmationEmailMessage" xml:space="preserve">
-    <value>ایمیل تایید را دریافت نکرده اید؟</value>
-  </data>
-  <data name="Or" xml:space="preserve">
-    <value>یا</value>
-  </data>
-  <data name="ProfileImage" xml:space="preserve">
-    <value>عکس پروفایل</value>
-  </data>
-  <data name="Remove" xml:space="preserve">
-    <value>حذف</value>
-  </data>
-  <data name="ResendEmail" xml:space="preserve">
-    <value>ارسال مجدد ایمیل</value>
-  </data>
-  <data name="ResetPasswordTitle" xml:space="preserve">
-    <value>ریست رمز عبور</value>
-  </data>
-  <data name="Save" xml:space="preserve">
-    <value>ذخیره</value>
-  </data>
-  <data name="SignInTitle" xml:space="preserve">
-    <value>ورود به برنامه</value>
-  </data>
-  <data name="SignOut" xml:space="preserve">
-    <value>خروج از سیستم</value>
-  </data>
-  <data name="SignOutPrompt" xml:space="preserve">
-    <value>آیا مطمئن هستید که می خواهید خارج شوید؟</value>
-  </data>
-  <data name="SignUp" xml:space="preserve">
-    <value>ثبت نام</value>
-  </data>
-  <data name="SingUpTitle" xml:space="preserve">
-    <value>ثبت نام</value>
-  </data>
-  <data name="Submit" xml:space="preserve">
-    <value>ارسال</value>
-  </data>
-  <data name="TermsMessage" xml:space="preserve">
-    <value>من موافقم با</value>
-  </data>
-  <data name="UploadNewProfileImage" xml:space="preserve">
-    <value>بارگذاری یک عکس پروفایل جدید</value>
-  </data>
-  <data name="Yes" xml:space="preserve">
-    <value>بله</value>
-  </data>
-  <data name="SelectBirthDate" xml:space="preserve">
-    <value>تاریخ تولد خود را انتخاب کنید</value>
-  </data>
-  <data name="ResetPassword" xml:space="preserve">
-    <value>ریست رمز عبور</value>
+  <data name="AboutTitle" xml:space="preserve">
+    <value>داربارە</value>
   </data>
   <data name="Action" xml:space="preserve">
-    <value>عملیات</value>
+    <value>کردار</value>
+  </data>
+  <data name="Active" xml:space="preserve">
+    <value>چالاککردن</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>زیادکردن</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>هەمووی</value>
+  </data>
+  <data name="Alphabetical" xml:space="preserve">
+    <value>بە پێی ئەلفوبێ</value>
+  </data>
+  <data name="AlreadyHaveAccountMessage" xml:space="preserve">
+    <value>پێشتر خۆت تۆمار کردووە؟</value>
+  </data>
+  <data name="AreYouSureWannaDelete" xml:space="preserve">
+    <value>ئایا دڵنیای کە دەتەوێت {0} بسڕیتەوە؟</value>
   </data>
   <data name="Back" xml:space="preserve">
-    <value>بازگشت</value>
+    <value>گەڕانەوە</value>
+  </data>
+  <data name="BadRequestException" xml:space="preserve">
+    <value>داخوازیى هەڵە</value>
+  </data>
+  <data name="BirthDate" xml:space="preserve">
+    <value>رۆژی لە دایکبوون</value>
   </data>
   <data name="Cancel" xml:space="preserve">
-    <value>لغو</value>
+    <value>ڕەتکردنەوە</value>
+  </data>
+  <data name="CheckIn" xml:space="preserve">
+    <value>داخڵبوون</value>
+  </data>
+  <data name="CheckOut" xml:space="preserve">
+    <value>دەرچوون</value>
   </data>
   <data name="CheckSpamMailMessage" xml:space="preserve">
-    <value>اگر ایمیل را در Inbox نیافتید، فولدر اسپم / Junk خود را بررسی کنید</value>
+    <value>سەیری سپام بکە/ئەگەر لە ئیمەیڵدا نەتتوانی بیدۆزیتەوە.</value>
+  </data>
+  <data name="Code" xml:space="preserve">
+    <value>کۆد</value>
   </data>
   <data name="Color" xml:space="preserve">
-    <value>رنگ</value>
+    <value>ڕەنگ</value>
+  </data>
+  <data name="CompareAttribute_ValidationError" xml:space="preserve">
+    <value> {0} و {1} یەک ناگرنەوە</value>
+  </data>
+  <data name="Completed" xml:space="preserve">
+    <value>تەواو بووە</value>
+  </data>
+  <data name="ConfirmEmailMessage" xml:space="preserve">
+    <value>لینکی پشتڕاستکردنەوەمان بۆ ئیمەیڵەکەت ناردووە.
+تکایە ئیمەیڵەکەت پشتڕاست بکەرەوە بە کلیک کردن لەسەر لینکەکە.</value>
+  </data>
+  <data name="ConfirmEmailTitle" xml:space="preserve">
+    <value>دووبارە کردنەوە ناونیشانی ئیمەیڵەکەت</value>
+  </data>
+  <data name="ConfirmNewPassword" xml:space="preserve">
+    <value>دووبارە کردنەوە ووشەى نهێنى نوێ</value>
+  </data>
+  <data name="ConflictException" xml:space="preserve">
+    <value>داواکارییەکە نەتوانرا پرۆسێس بکرێت بەهۆی ناڕێکی لە داواکارییەکەدا</value>
   </data>
   <data name="CustomColor" xml:space="preserve">
-    <value>رنگ سفارشی</value>
+    <value>ڕەنگی تایبەت</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>ڕێکەوت</value>
   </data>
   <data name="Delete" xml:space="preserve">
-    <value>حذف</value>
+    <value>سڕینەوە</value>
   </data>
-  <data name="Id" xml:space="preserve">
-    <value>شناسه</value>
+  <data name="DeleteAccount" xml:space="preserve">
+    <value>ئەکاونتەکە بسڕەوە</value>
   </data>
-  <data name="SignIn" xml:space="preserve">
-    <value>ورود به برنامه</value>
+  <data name="DeleteAccountPrompt" xml:space="preserve">
+    <value>دڵنیای کە دەتەوێت ئەکاونتەکەت بسڕیتەوە؟</value>
   </data>
-  <data name="SignInAsDifferentUser" xml:space="preserve">
-    <value>ورود به سیستم به عنوان کاربر متفاوت</value>
+  <data name="Description" xml:space="preserve">
+    <value>وەسف</value>
   </data>
-  <data name="YouAreSignInAs" xml:space="preserve">
-    <value>شما در حال ورود به سیستم به عنوان</value>
+  <data name="DontHaveAccountMessage" xml:space="preserve">
+    <value>ئەکاونتت نییە؟</value>
+  </data>
+  <data name="DuplicateEmail" xml:space="preserve">
+    <value>ئیمەیڵی '{0}' پێشتر وەرگیراوە.</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>دەستکاریکردن</value>
+  </data>
+  <data name="EditProfileTitle" xml:space="preserve">
+    <value>دەستکاریکردنی پرۆفایل</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>ئیمەیڵ</value>
+  </data>
+  <data name="EmailAddressAttribute_ValidationError" xml:space="preserve">
+    <value>لە بەشی {0} ناونیشانی ئیمەیڵی دروست نییە.</value>
+  </data>
+  <data name="EmailAlreadyConfirmed" xml:space="preserve">
+    <value>ئیمەیڵەکەت پێشتر پشتڕاستکراوەتەوە.</value>
+  </data>
+  <data name="EmailConfirmationFailedMessage" xml:space="preserve">
+    <value>پشتڕاستکردنەوەی ئیمەیڵ شکستی هێنا!</value>
+  </data>
+  <data name="EmailConfirmationTitle" xml:space="preserve">
+    <value>پشتڕاستکردنەوەی ئیمەیڵ</value>
+  </data>
+  <data name="EmailConfirmedSuccessfullyMessage" xml:space="preserve">
+    <value>ئیمەیڵ بە سەرکەوتوویی پشتڕاستکرایەوە!</value>
+  </data>
+  <data name="EnterServerAddress" xml:space="preserve">
+    <value>ناونیشانی سێرڤەرەکەت دابنێ</value>
+  </data>
+  <data name="EnterServerAddressPlaceholder" xml:space="preserve">
+    <value>http://domain.com or http://135.174.181.171</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>هەڵە</value>
+  </data>
+  <data name="FileUploadFailed" xml:space="preserve">
+    <value>لە کاتی بارکردنی فایلێکدا هەڵەیەک ڕوویدا</value>
+  </data>
+  <data name="ForbiddenException" xml:space="preserve">
+    <value>دەستڕاگەیشتن بە سەرچاوەی داواکراو قەدەغەیە</value>
+  </data>
+  <data name="ForgetPasswordMessage" xml:space="preserve">
+    <value>تکایە ئەو ئیمەیڵە بنووسە کە ناوت تۆمار کردووە بۆ ئەوەی بتوانین لینکی ڕێستکردنەوەی وشەی نهێنی بنێرین بۆ ئیمەیڵەکەت.</value>
+  </data>
+  <data name="ForgetPasswordTitle" xml:space="preserve">
+    <value>له‌بیرچوونی وشه‌ی نهێنی</value>
   </data>
   <data name="ForgotPasswordLink" xml:space="preserve">
-    <value>رمز عبور را فراموش کرده اید؟</value>
+    <value>وشەی نهێنی لەبیر کردووە؟</value>
+  </data>
+  <data name="FullName" xml:space="preserve">
+    <value>ناوى تەواو</value>
+  </data>
+  <data name="Gender" xml:space="preserve">
+    <value>ڕەگەز</value>
   </data>
   <data name="GenderFemale" xml:space="preserve">
-    <value>زن</value>
+    <value>مێ</value>
   </data>
-  <data name="RememberMe" xml:space="preserve">
-    <value>من رو به خاطر بسپار؟</value>
+  <data name="GenderMale" xml:space="preserve">
+    <value>نێر</value>
   </data>
-  <data name="Update" xml:space="preserve">
-    <value>بروز رسانی</value>
+  <data name="GenderOther" xml:space="preserve">
+    <value>ئی تر</value>
+  </data>
+  <data name="GitHubRepo" xml:space="preserve">
+    <value>GitHub Repo</value>
+  </data>
+  <data name="GoToToday" xml:space="preserve">
+    <value>بڕۆ بۆ ئەمڕۆ</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>سەرەکی</value>
+  </data>
+  <data name="HomeMessage" xml:space="preserve">
+    <value>ئەپی فرە دۆخی (WASM, Server, Hybrid, pre-rendering)  Blazor ئەپ بە ئاسانی لە کورتترین کاتدا دروست بکە!</value>
+  </data>
+  <data name="HomeTitle" xml:space="preserve">
+    <value>شارپ سۆفت سەرەکی</value>
+  </data>
+  <data name="Id" xml:space="preserve">
+    <value>کۆد</value>
+  </data>
+  <data name="InvalidConfirmationLinkMessage" xml:space="preserve">
+    <value>وا دیارە لینکی پشتڕاستکردنەوە یان نادروستە یان بەسەرچووە.</value>
+  </data>
+  <data name="InvalidUsernameOrPassword" xml:space="preserve">
+    <value>ناو یان ژمارەنی نهێنی هەلەیە</value>
+  </data>
+  <data name="MaxLengthAttribute_InvalidMaxLength" xml:space="preserve">
+    <value> دەبێت MaxLengthAttribute بەهای Length ی هەبێت کە زیاتر بێت لە سفر. MaxLength() بەبێ پارامێتەر بەکاربهێنە بۆ ئەوەی ئاماژە بەوە بکەیت کە string یان array دەتوانێت زۆرترین درێژی ڕێگەپێدراوی هەبێت.</value>
+  </data>
+  <data name="MinLengthAttribute_ValidationError" xml:space="preserve">
+    <value>لە فیڵدی {0} دەبێت جۆرێکی string یان array بێت کە کەمترین درێژی '{1}' بێت.</value>
+  </data>
+  <data name="MyAttendance" xml:space="preserve">
+    <value>ئامادەبوونی من</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>ناو</value>
+  </data>
+  <data name="NeedLocation" xml:space="preserve">
+    <value>پێویستە شوێنی تۆ بزانین بۆ وەرگرتنی هاتنەژوورەوە یان چوونەدەرەوە</value>
+  </data>
+  <data name="NewPassword" xml:space="preserve">
+    <value>وشەی نهێنی نوێ</value>
   </data>
   <data name="NewVersionIsAvailable" xml:space="preserve">
-    <value>نسخه جدید در دسترس است</value>
+    <value>وەشانی نوێ بەردەستە</value>
   </data>
-  <data name="UpdateToNewVersion" xml:space="preserve">
-    <value>آیا می خواهید به نسخه جدید بروید؟</value>
-  </data>
-  <data name="AboutTitle" xml:space="preserve">
-    <value>درباره</value>
-  </data>
-  <data name="TodoAddPlaceholder" xml:space="preserve">
-    <value>افزودن یک کار</value>
-  </data>
-  <data name="NoTodos" xml:space="preserve">
-    <value>هنوز کاری ثبت نشده</value>
-  </data>
-  <data name="TodoSearchPlaceholder" xml:space="preserve">
-    <value>جستجو در کارها...</value>
-  </data>
-  <data name="ToDoItemCouldNotBeFound" xml:space="preserve">
-    <value>کار پیدا نشد</value>
-  </data>
-  <data name="TodoTitle" xml:space="preserve">
-    <value>کار</value>
-  </data>
-  <data name="DeleteTodoItem" xml:space="preserve">
-    <value>حذف کار</value>
-  </data>
-  <data name="ProductsCount" xml:space="preserve">
-    <value>تعداد محصولات</value>
-  </data>
-  <data name="Last30DaysProductCount" xml:space="preserve">
-    <value>تعداد محصولات ۳۰ روز گذشته</value>
-  </data>
-  <data name="AddProduct" xml:space="preserve">
-    <value>افزودن محصول</value>
-  </data>
-  <data name="SelectCategory" xml:space="preserve">
-    <value>انتخاب دسته</value>
-  </data>
-  <data name="TotalCategories" xml:space="preserve">
-    <value>تعداد دسته بندی ها</value>
-  </data>
-  <data name="TotalProducts" xml:space="preserve">
-    <value>تعداد محصولات</value>
-  </data>
-  <data name="EditCategory" xml:space="preserve">
-    <value>ویرایش دسته</value>
-  </data>
-  <data name="AddCategory" xml:space="preserve">
-    <value>دسته جدید</value>
-  </data>
-  <data name="CategoriesPageTitle" xml:space="preserve">
-    <value>دسته بندی ها</value>
-  </data>
-  <data name="EnterCategoryName" xml:space="preserve">
-    <value>نام دسته را وارد کنید</value>
-  </data>
-  <data name="EnterProductName" xml:space="preserve">
-    <value>نام محصول را وارد کنید</value>
-  </data>
-  <data name="Last30DaysCategoryCount" xml:space="preserve">
-    <value>تعداد دسته های ۳۰ روز گذشته</value>
-  </data>
-  <data name="ProductSales" xml:space="preserve">
-    <value>فروش محصولات</value>
-  </data>
-  <data name="ProductSalesText" xml:space="preserve">
-    <value>این نمودار تعداد فروش هر محصول را نشان می دهد.</value>
-  </data>
-  <data name="SearchOnName" xml:space="preserve">
-    <value>جستجو در نام</value>
-  </data>
-  <data name="ProductsCountPerCategoryChart" xml:space="preserve">
-    <value>چارت تعداد محصولات در هر دسته</value>
-  </data>
-  <data name="ProductsCountPerCategoryChartText" xml:space="preserve">
-    <value>این نمودار تعداد محصولات در هر دسته را نشان می دهد.</value>
-  </data>
-  <data name="ProductsPageTitle" xml:space="preserve">
-    <value>محصولات</value>
-  </data>
-  <data name="ProductsPercentagePerCategory" xml:space="preserve">
-    <value>درصد محصولات هر دسته</value>
-  </data>
-  <data name="ProductsPercentagePerCategoryText" xml:space="preserve">
-    <value>این نمودار درصد محصولات هر دسته را نشان می دهد.</value>
-  </data>
-  <data name="Categories" xml:space="preserve">
-    <value>دسته ها</value>
-  </data>
-  <data name="ProductCategory" xml:space="preserve">
-    <value>دسته ها و محصولات</value>
-  </data>
-  <data name="Products" xml:space="preserve">
-    <value>محصولات</value>
-  </data>
-  <data name="ProductCouldNotBeFound" xml:space="preserve">
-    <value>محصول پیدا نشد</value>
-  </data>
-  <data name="CategoryNotEmpty" xml:space="preserve">
-    <value>این دسته دارای محصول است، بنابراین نمی توانید ان را حذف کنید</value>
-  </data>
-  <data name="AreYouSureWannaDeleteCategory" xml:space="preserve">
-    <value>آیا مطمئن هستید که می خواهید دسته بندی {0} را حذف کنید؟</value>
-  </data>
-  <data name="AreYouSureWannaDeleteProduct" xml:space="preserve">
-    <value>آیا مطمئن هستید که می خواهید محصول {0} را حذف کنید؟</value>
-  </data>
-  <data name="DeleteCategory" xml:space="preserve">
-    <value>حذف دسته</value>
-  </data>
-  <data name="DeleteProduct" xml:space="preserve">
-    <value>حذف محصول</value>
-  </data>
-  <data name="CategoryCouldNotBeFound" xml:space="preserve">
-    <value>دسته مورد نظر پیدا نشد</value>
-  </data>
-  <data name="Category" xml:space="preserve">
-    <value>دسته</value>
-  </data>
-  <data name="DefaultColorPicker" xml:space="preserve">
-    <value>انتخاب کننده رنگ پیش فرض</value>
-  </data>
-  <data name="EditProduct" xml:space="preserve">
-    <value>ویرایش محصول</value>
-  </data>
-  <data name="Dashboard" xml:space="preserve">
-    <value>داشبورد</value>
+  <data name="No" xml:space="preserve">
+    <value>نەخێر</value>
   </data>
   <data name="NotFoundText" xml:space="preserve">
-    <value>چیزی پیدا نشد.</value>
+    <value>لێرەدا هیچ شتێک نییە.</value>
+  </data>
+  <data name="NotReceivedConfirmationEmailMessage" xml:space="preserve">
+    <value>ئایا ئیمەیڵی پشتڕاستکردنەوەکەت وەرنەگرتووە؟</value>
+  </data>
+  <data name="Or" xml:space="preserve">
+    <value>یان</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>وشەی نهێنی</value>
+  </data>
+  <data name="PasswordChangedSuccessfullyMessage" xml:space="preserve">
+    <value>وشەی نهێنیەکەت بە سەرکەوتوویی گۆڕدرا.</value>
+  </data>
+  <data name="Price" xml:space="preserve">
+    <value>نرخ</value>
+  </data>
+  <data name="ProfileImage" xml:space="preserve">
+    <value>وێنەی پڕۆفایل</value>
+  </data>
+  <data name="ProfileUpdatedSuccessfullyMessage" xml:space="preserve">
+    <value>پڕۆفایلەکە بە سەرکەوتوویی نوێکرایەوە.</value>
+  </data>
+  <data name="RangeAttribute_ValidationError" xml:space="preserve">
+    <value>فیڵدی {0} دەبێت لە نێوان {1} و {2} بێت.</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>نوێکردنەوە</value>
+  </data>
+  <data name="RememberMe" xml:space="preserve">
+    <value>منت لە بیر بێت؟</value>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>لابردن</value>
+  </data>
+  <data name="RequiredAttribute_ValidationError" xml:space="preserve">
+    <value>فیڵدی {0} پێویستە.</value>
+  </data>
+  <data name="ResendConfirmationLinkMessage" xml:space="preserve">
+    <value>لینکی پشتڕاستکردنەوەکە دووبارە نێردراوەتەوە بۆ ئیمەیڵەکەت.</value>
+  </data>
+  <data name="ResendEmail" xml:space="preserve">
+    <value>ناردنەوەی ئیمێڵ</value>
+  </data>
+  <data name="ResetPassword" xml:space="preserve">
+    <value>نوێکردنەوەی وشەی نهێنی</value>
+  </data>
+  <data name="ResetPasswordLinkSentMessage" xml:space="preserve">
+    <value>لینکی نوێکردنەوەی وشەی نهێنی بۆ ئیمەیڵەکەت نێردراوە.</value>
+  </data>
+  <data name="ResetPasswordTitle" xml:space="preserve">
+    <value>نوێکردنەوەی وشەی نهێنی</value>
+  </data>
+  <data name="ResourceNotFoundException" xml:space="preserve">
+    <value>سەرچاوەکە نەدۆزراوەتەوە</value>
+  </data>
+  <data name="ResourceValidationException" xml:space="preserve">
+    <value>داتا داواکراوەکان تەواو نین</value>
+  </data>
+  <data name="RestException" xml:space="preserve">
+    <value>لە کاتی پەیوەندیکردن لەگەڵ سێرڤەردا هەڵەیەک ڕوویدا</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>هەڵگرتن</value>
+  </data>
+  <data name="SelectBirthDate" xml:space="preserve">
+    <value>ڕێکەوتی لەدایکبوونت هەڵبژێرە</value>
+  </data>
+  <data name="ServerAddress" xml:space="preserve">
+    <value>ئادرەسی سێرڤێر</value>
+  </data>
+  <data name="ServerAddressAttribute_ValidationError" xml:space="preserve">
+    <value>فیڵدی {0} url ی دروست نییە.</value>
+  </data>
+  <data name="ServerConnectionException" xml:space="preserve">
+    <value>ناتوانرێت پەیوەندی بە سێرڤەرەوە بکرێت.</value>
+  </data>
+  <data name="SignIn" xml:space="preserve">
+    <value>چوونە ژوورەوە</value>
+  </data>
+  <data name="SignInAsDifferentUser" xml:space="preserve">
+    <value>وەک بەکارهێنەرێکی جیاواز بچۆرە ژوورەوە</value>
+  </data>
+  <data name="SignInTitle" xml:space="preserve">
+    <value>چوونە ژوورەوە</value>
+  </data>
+  <data name="SignOut" xml:space="preserve">
+    <value>دەرچوون</value>
+  </data>
+  <data name="SignOutPrompt" xml:space="preserve">
+    <value>ئایا دڵنیای کە دەتەوێت بچیتە دەرەوە؟</value>
+  </data>
+  <data name="SignUp" xml:space="preserve">
+    <value>خۆت تۆمار بکە</value>
+  </data>
+  <data name="SingUpTitle" xml:space="preserve">
+    <value>خۆت تۆمار بکە</value>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>پێشکەشکردن</value>
   </data>
   <data name="SubmitCheckin" xml:space="preserve">
-    <value>Your check-in/check-out has submit successfully!</value>
+    <value>هاتنەژوورەوە و چوونەدەرەوەکەت بە سەرکەوتوویی پێشکەش کراوە!</value>
+  </data>
+  <data name="TermsAccepted" xml:space="preserve">
+    <value>ئایا مەرجەکانی وەرگیراون؟</value>
+  </data>
+  <data name="TermsMessage" xml:space="preserve">
+    <value>من ڕازیم</value>
+  </data>
+  <data name="TermsTitle" xml:space="preserve">
+    <value>مەرجەکان</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>ناونیشان</value>
+  </data>
+  <data name="TooManyRequestsExceptions" xml:space="preserve">
+    <value>داواکاری زۆرە</value>
+  </data>
+  <data name="TurnOnLocation" xml:space="preserve">
+    <value>تکایە لۆکەیشنەکەت کارا بکە بۆ دەستگەیشتن بە لۆکەیشنی ئامێرەکە</value>
+  </data>
+  <data name="UnauthorizedException" xml:space="preserve">
+    <value>داواکارییەکەت بڕوانامەی پاڵپشتی باوەڕپێکراوی نییە</value>
+  </data>
+  <data name="UnknownException" xml:space="preserve">
+    <value>هەڵەیەکی نزانراو ڕوویداوە</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>نوێکردنەوە</value>
+  </data>
+  <data name="UpdateConcurrencyException" xml:space="preserve">
+    <value>تۆمارەکە لەلایەن بەکارهێنەرێکی ترەوە دەستکاری کراوە دوای ئەوەی داتای ئەسڵیت دەستکەوت. ئۆپەراسیۆنەکە هەڵوەشایەوە.</value>
+  </data>
+  <data name="UpdateToNewVersion" xml:space="preserve">
+    <value>حەز دەکەیت نوێکاری بکەیتەوە بۆ وەشانی نوێ؟</value>
+  </data>
+  <data name="UploadNewProfileImage" xml:space="preserve">
+    <value>بارکردنی وێنەیەکی نوێی پڕۆفایل</value>
+  </data>
+  <data name="UserImageCouldNotBeFound" xml:space="preserve">
+    <value>وێنەی بەکارهێنەر نەدۆزرایەوە</value>
+  </data>
+  <data name="UserLockedOut" xml:space="preserve">
+    <value>بەکارهێنەر قفڵ کراوە. دووبارە هەوڵبدەرەوە لە {0}</value>
+  </data>
+  <data name="UserNameNotFound" xml:space="preserve">
+    <value>بەکارهێنەری {0} بوونی نییە.</value>
+  </data>
+  <data name="WaitForConfirmationEmailResendDelay" xml:space="preserve">
+    <value>پێشتر داوای ئیمەیڵی پشتڕاستکردنەوەت کردووە. دووبارە هەوڵبدەرەوە لە {0}</value>
+  </data>
+  <data name="WaitForResetPasswordEmailResendDelay" xml:space="preserve">
+    <value>پێشتر داوای ئیمەیڵی وشەی نهێنی ڕێستکردنت کردووە. دووبارە هەوڵبدەرەوە لە {0}</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>بەڵێ</value>
+  </data>
+  <data name="YouAreSignInAs" xml:space="preserve">
+    <value>تۆ دەچیتە ژوورەوە وەک</value>
+  </data>
+  <data name="YouHaveToAcceptTerms" xml:space="preserve">
+    <value>پێویستە تۆ بە مەرجەکانمان ڕازی بیت.</value>
+  </data>
+  <data name="YouNeedToSignIn" xml:space="preserve">
+    <value>بۆ بەردەوام بوون دەبێت بچیتە ژوورەوە.</value>
   </data>
 </root>

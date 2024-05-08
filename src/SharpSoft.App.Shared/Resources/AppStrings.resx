@@ -335,7 +335,7 @@ Please confirm your email by clicking on the link.</value>
     <value>Create your multi-mode (WASM, Server, Hybrid, pre-rendering) Blazor app easily in the shortest time ever!</value>
   </data>
   <data name="HomeTitle" xml:space="preserve">
-    <value>SharpSoft.App Home</value>
+    <value>SharpSoft</value>
   </data>
   <data name="InvalidConfirmationLinkMessage" xml:space="preserve">
     <value>Looks like the confirmation link either is invalid or has expired.</value>
@@ -473,13 +473,13 @@ Please confirm your email by clicking on the link.</value>
     <value>Refresh</value>
   </data>
   <data name="TurnOnLocation" xml:space="preserve">
-    <value>Please turn on your location to access device location</value>
+    <value>Please turn on device location service to access your location</value>
   </data>
   <data name="EnterServerAddress" xml:space="preserve">
     <value>Enter your server address</value>
   </data>
   <data name="EnterServerAddressPlaceholder" xml:space="preserve">
-    <value>http://domain.com or http://135.174.181.171</value>
+    <value>https://domain.com</value>
   </data>
   <data name="ServerAddress" xml:space="preserve">
     <value>Server Address</value>
@@ -488,6 +488,6 @@ Please confirm your email by clicking on the link.</value>
     <value>The {0} field is not a valid url.</value>
   </data>
   <data name="SubmitCheckin" xml:space="preserve">
-    <value>Your check-in/check-out has submit successfully!</value>
+    <value>Your check-in/check-out has submitted successfully!</value>
   </data>
 </root>
