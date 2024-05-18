@@ -66,7 +66,7 @@ public partial class NavMenu
         //var access_token = await PrerenderStateService.GetValue(() => AuthTokenProvider.GetAccessTokenAsync());
         //profileImageUrlBase = $"{Configuration.GetApiServerAddress()}api/Attachment/GetProfileImage?access_token={access_token}&file=";
 
-        SetProfileImageUrl();
+        //SetProfileImageUrl();
     }
 
     private void SetProfileImageUrl()
