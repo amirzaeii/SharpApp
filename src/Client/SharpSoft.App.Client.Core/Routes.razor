@@ -1,5 +1,5 @@
 ﻿<CascadingAuthenticationState>
-	<AuthenticationStateLogger />
+	 @* <AuthenticationStateLogger />  *@
     <LayoutView Layout="@typeof(MainLayout)">
         <Router AppAssembly="@GetType().Assembly"
                 AdditionalAssemblies="@(AssemblyLoadContext.Default.Assemblies.Where(asm => asm.GetName().Name?.Contains("SharpSoft.App") is true))">
