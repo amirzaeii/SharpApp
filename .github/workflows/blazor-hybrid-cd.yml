@@ -133,7 +133,7 @@ jobs:
       run: dotnet publish src/Client/SharpSoft.App.Client.Maui/SharpSoft.App.Client.Maui.csproj -p:RuntimeIdentifier=ios-arm64 -c Release -p:ArchiveOnBuild=true -p:CodesignKey="Apple Distribution" -p:CodesignProvision="SharpSoftApp"  -p:ApplicationDisplayVersion="${{ vars.APPLICATION_DISPLAY_VERSION }}" -p:ApplicationVersion="${{ vars.APPLICATION_VERSION }}" -f net8.0-ios
 
     - name: Upload artifact
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: iOS-bundle
         path: src/Client/SharpSoft.App.Client.Maui/bin/release/net8.0-ios/ios-arm64/publish/*.ipa
