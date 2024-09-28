@@ -1,4 +1,5 @@
 ﻿using SharpSoft.App.Client.Core;
+using System.Reflection;
 using Maui.Android.InAppUpdates;
 using Maui.AppStores;
 using Maui.InAppReviews;
@@ -26,6 +27,9 @@ public static partial class MauiProgram
         builder.ConfigureLifecycleEvents(lifecycle =>
         {
 #if iOS || Mac
+             var handlerType = typeof(BlazorWebViewHandler);
+             var field = handlerType.GetField("AppOriginUri", BindingFlags.Static | BindingFlags.NonPublic) ?? throw new Exception("AppOriginUri field not found");
+             field.SetValue(null, new Uri("app://localhost/"));
             lifecycle.AddiOS(ios =>
             {
                 bool HandleAppLink(Foundation.NSUserActivity? userActivity)
