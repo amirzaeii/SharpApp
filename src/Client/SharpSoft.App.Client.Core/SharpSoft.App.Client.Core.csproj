@@ -13,9 +13,6 @@
 
         <Content Remove="compilerconfig.json" />
         <None Include="compilerconfig.json" />
-        <None Include="wwwroot\lib\leaflet\leaflet-src.esm.js" />
-        <None Include="wwwroot\lib\leaflet\leaflet-src.js" />
-        <None Include="wwwroot\lib\leaflet\leaflet.js" />
         
          
         <Content Remove="appsettings*.json" />
