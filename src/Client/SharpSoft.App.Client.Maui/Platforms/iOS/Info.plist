@@ -39,6 +39,6 @@
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Your location is required for checkin and checkout</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.1</string>
+	<string>1.2</string>
 </dict>
 </plist>
