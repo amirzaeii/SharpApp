@@ -7,7 +7,7 @@
                 "ASPNETCORE_ENVIRONMENT": "Development"
             },
             "dotnetRunMessages": true,
-            "applicationUrl": "http://localhost:5030"
+            "applicationUrl": "http://localhost:503١"
         },
         "SharpSoft.App.Server-Swagger": {
             "commandName": "Project",
