@@ -9,8 +9,8 @@
     <Application.Resources>
         <ResourceDictionary>
             <Style ApplyToDerivedTypes="True" TargetType="ContentPage">
-                <Setter Property="NavigationPage.HasNavigationBar" Value="False" />
-                <Setter Property="ios:Page.UseSafeArea" Value="False" />
+                <Setter Property="NavigationPage.HasNavigationBar" Value="True" />
+                <Setter Property="ios:Page.UseSafeArea" Value="True" />
             </Style>
         </ResourceDictionary>
     </Application.Resources>
